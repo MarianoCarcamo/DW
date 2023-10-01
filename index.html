@@ -15,7 +15,7 @@
     <!-- El cuerpo contiene lo que el usuario puede ver. La mayoria del codigo esta aqui -->
     <body>
         <!-- Cabecera de pagina  -->
-        <header class="colorBrown">
+        <!-- <header class="colorBrown">
             <a class="estiloFuente" href="#">
                 <img class="logo" src="./assets/img/logo.png" alt="logo" loading="lazy">
                 Coffee ● DOT
@@ -29,6 +29,37 @@
                     <li class="itemNav"><a class="estiloFuente" href = "./pages/contacto.html">Contacto</a></li>
                 </ul>
             </nav>
+        </header> -->
+        <header>
+            <!-- <nav class="navbar navbar-expand-lg px-2 bg-none  position-absolute w-100 z-2"> -->
+            <nav class="navbar navbar-expand-lg px-2 customizedNav">
+                <div class="container-fluid">
+                  <a class="navbar-brand estiloFuente" href="#">
+                    <img class="logo" src="./assets/img/logo.png" alt="logo" loading="lazy"> Coffee ● <span class="negrita">DOT</span></a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 w-100 justify-content-end">
+                      <li class="nav-item">
+                        <a class="nav-link estiloFuente colorInicio" href="#">Inicio</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link estiloFuente" href="#">Nosotros</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link estiloFuente" href="#">Servicios</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link estiloFuente" href="#">Menú</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link estiloFuente" href="#">Contacto</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </nav>
         </header>
 
         <!-- Contenido principal -->
@@ -36,7 +67,24 @@
             
             <!-- Carrusel -->
             <section>
-                
+                <div id="carouselExampleFade" class="carousel slide carousel-fade overlay-bottom">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="./assets/img/carousel-1.jpg" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="./assets/img/carousel-2.jpg" class="d-block w-100" alt="...">
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
             </section>
 
             <!-- Nosotros -->
