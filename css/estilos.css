@@ -1,0 +1,119 @@
+/* Importo familia de fuentes desde google font - libreFranklin & Lora */
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,200;0,400;0,700;1,200;1,400;1,700&family=Lora:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+/* ===================================== Estilos generales ==================================== */
+
+/* Reseteo de etiquetas html */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Se aplica estilo, color y tamaño de fuente */
+.estiloFuente{
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  font-family: 'Lora', serif;
+  font-size: 1.25rem;
+  font-weight: 400;
+}
+
+p{
+  text-align: justify;
+  font-size: 0.95em;
+}
+
+/* ===================================== Estilos del header ==================================== */
+
+/* Color de fondo */
+.colorBrown{
+  background-color: rgb(94, 57, 9);
+}
+
+/* Tamaño del logo */
+.logo{
+    width: 107px;
+    height: 98px;
+    margin: 10px;
+}
+
+/* Propiedades de caja a la navegacion - Centramos en Y y aplicamos margen*/
+.nav{
+  display: inline-block;
+  position: relative;
+  margin: 10px;
+  bottom: 43px;
+}
+
+/* Quitamos los puntos de lista - Alineamos los items - Aplicamos margen para separarlos */
+.itemNav{
+    display: inline;
+    list-style: none;
+    margin: 20px;
+}
+
+/* ===================================== Estilos del main ==================================== */
+
+/* Se aplica la imagen de fondo principal */
+.fondoMain{
+  background-image: url("../assets/img/coffee-beans.jpg"); 
+  height: 100vh;
+  background-size: cover;
+}
+
+/* Se atenua la imagen de fondo */
+.fondoMain .boxAtenuado{
+  background-color: rgba(0, 0, 0, 0.6);
+  height: inherit;
+  overflow: hidden;
+}
+
+/* Se aplican propiedades de caja - Alejamos el contenido de los bordes */
+.seccionPrincipal{
+  padding-top: 5%;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+/*  Cambios en fuente y centrado del titulo principal */
+.seccionPrincipal h1{
+  margin-bottom: 5%;
+  font-size: 3em;
+  font-weight: 400;
+  text-align: center;
+}
+
+/*  Cambios en fuente y alejamiento del subtitulo */
+.seccionPrincipal h2{
+  margin-bottom: 1%;
+  font-weight: 400;
+  font-style: italic;
+}
+
+/*  Cambios en fuente y alejamiento del subtitulo h3 */
+.seccionPrincipal h3{
+  margin-top: 2%;
+  margin-bottom: 1%;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 1.25em;
+}
+
+/*  Espaciado entre parrafos */
+.seccionPrincipal p{
+  margin-bottom: 1%;
+}
+
+/* ===================================== Estilos del footer ==================================== */
+
+.estiloFooter{
+  height: 3vh;
+}
+
+.estiloFooter p{
+  font-size: 0.65em;
+  text-align: center;
+  position: relative;
+  top: 34%;
+}
