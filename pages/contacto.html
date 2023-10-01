@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+
+<html lang="es"> <!-- Indica al navegador el idioma en la que esta la pagina -->
+
+    <!-- La cabeza o "head" contiene las configuraciones principales -->
+    <head>
+        <meta charset="UTF-8"> <!-- Codigo de caracteres empleado -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Config. de la vista en pantalla -->
+        <title>El Café | La infución mas popular en el mundo</title> <!-- "nombre" de la pagina -->
+        <link rel="icon" type="image/png" href="../favicon.ico"> <!-- Linkeamos el favicon-->
+    </head>
+
+    <!-- El cuerpo contiene lo que el usuario puede ver. La mayoria del codigo esta aqui -->
+    <body>
+
+        <!-- Cabecera de pagina -->
+        <header>
+            <a href="../index.html">
+                <img src="../assets/img/logo.png" alt="logo" loading="lazy"> 
+            </a>
+            <nav>
+                <ul>
+                    <li><a href = "../index.html">Inicio</a></li>
+                    <li><a href = "./salud.html">Salud</a></li>
+                    <li><a href = "./cultura.html">Cultura</a></li>
+                    <li><a href = "./tipos_y_estilos.html">Tipos</a></li>
+                    <li><a href = "#">Contacto</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Contenido principal -->
+        <main> 
+            <section>
+                <h1> Contactanos </h1>
+    
+                <!-- Formulario de contacto -->
+                <form action="404.html" method="post">
+                    <div> 
+                        <input type="text" name="nombre" id="nombre" placeholder="Nombre" required>
+                    </div>
+                    <div>
+                        <input type="text" name="apellido" id="apellido" placeholder="Apellido" required>
+                    </div>
+                    <div> 
+                        <input type="email" name="email" id="email" placeholder="Email" required>
+                    </div>
+                    <div>
+                        <textarea name="mensaje" id="mensaje" cols="50" rows="5" placeholder="Ingrese su comentario" ></textarea>
+                    </div>
+                    <div> 
+                        <input type="reset" id="limpiar" name="limpiar" value="Limpiar Formulario">
+                        <input type="submit" id="enviar" name="enviar" value="Enviar Formulario">
+                    </div>
+                </form>
+            </section>
+            <section>
+                <h2>Proximo seminario en San Miguel de Tucumán</h2>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d56963.570876463076!2d-65.2637931753926!3d-26.83285293367095!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94223792d6c56903%3A0xf88d5b92b5c56527!2sSan%20Miguel%20de%20Tucum%C3%A1n%2C%20Tucum%C3%A1n!5e0!3m2!1ses-419!2sar!4v1694305783271!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <a href="https://www.ticketmaster.cl/" target="_blank">
+                    <h3>Reserva tu lugar</h3>
+                </a>
+            </section>
+        </main>
+
+        <!-- Pie de pagina -->
+        <footer>
+            <p>Derechos de autor © 2023 Mariano C.</p>
+        </footer>
+    </body>
+
+</html>
