@@ -15,7 +15,6 @@
   color: rgb(255, 255, 255);
   text-decoration: none;
   font-family: 'Lora', serif;
-  /* font-size: 1.25rem; */
   font-weight: 400;
 }
 
@@ -23,7 +22,6 @@
   color: rgb(255, 255, 255);
   text-decoration: none;
   font-family: 'Libre Franklin', sans-serif;
-  /* font-size: 1.25rem; */
   font-weight: 400;
 }
 
@@ -34,10 +32,6 @@
 .text-brown{
   color: rgb(255, 153, 0);
 }
-/* 
-.text-dark-brown{
-  color: #33211D;
-} */
 
 .text-black{
   color: #33211D !important;
@@ -185,6 +179,7 @@ p{
 }
 /* Estilo seccion Oferta */
 .reservacion,
+.estiloFooter,
 .oferta{
   background: linear-gradient(rgba(51, 33, 29, 0.85), rgba(51, 33, 29, 0.85)), url(../assets/img/bg.jpg);
   background-position: top;
@@ -212,8 +207,8 @@ p{
 }
 
 ::placeholder{
-  color: white;
-}
+   color: white; 
+} 
 
 .btn-borde{
   border-radius: 0;
@@ -255,7 +250,7 @@ p{
 }
 
 /* ===================================== Estilos del footer ==================================== */
-
+/* 
 .estiloFooter{
   height: 3vh;
 }
@@ -265,4 +260,4 @@ p{
   text-align: center;
   position: relative;
   top: 34%;
-}
+} */

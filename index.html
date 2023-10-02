@@ -183,12 +183,12 @@
                         <form class="d-flex justify-content-center">
                             <div class="mx-1">
                               <label class="visually-hidden" for="inlineFormInputGroupUsername">Username</label>
-                              <div class="input-group">
-                                <input type="email" class="form-control" id="inlineFormInputGroupUsername" placeholder="Correo Electrónico">
+                              <div class="mx-1">
+                                <input type="email" name="email" class="fontFranklin bg-transparent border-primary p-1" id="inlineFormInputGroupUsername" placeholder="Correo Electrónico">
                               </div>
                             </div>
                             <div class="mx-1">
-                              <button type="submit" class="btn btn-light-brown fontFranklin">Enviar</button>
+                              <button type="submit" class="btn btn-light-brown btn-borde negrita fontFranklin">Enviar</button>
                             </div>
                         </form>
                     </div>
@@ -198,9 +198,9 @@
             <!-- Menu -->
             <section class="container-fluid pt-5"> 
                 <div class="container">
-                    <div class="section-titulo">
-                        <h4 class="text-brown fontLora negrita interLetter-5">Menú & Precios</h4>
-                        <h1 class="display-4 fontLora text-black">Precios Competitivos</h1>
+                    <div class="section-titulo fontLora">
+                        <h4 class="text-brown negrita interLetter-5">Menú & Precios</h4>
+                        <h1 class="display-4 text-black">Precios Competitivos</h1>
                     </div>
                     <div class="row">
                         <div class="col-lg-6">
@@ -275,68 +275,154 @@
 
             <!-- Reservacion -->
             <section>
-                
-    <div class="container-fluid my-5">
-        <div class="container">
-            <div class="reservacion position-relative overlay-top overlay-bottom">
-                <div class="row align-items-center">
-                    <div class="col-lg-6 my-5 my-lg-0">
-                        <div class="p-5">
-                            <div class="mb-4">
-                                <h1 class="display-3 text-brown fontFranklin negrita">30% OFF</h1>
-                                <h1 class="fontFranklin negrita">Para Reservas en Linea</h1>
+                <div class="container-fluid my-5">
+                    <div class="container">
+                        <div class="reservacion position-relative overlay-top overlay-bottom">
+                            <div class="row align-items-center">
+                                <div class="col-lg-6 my-5 my-lg-0">
+                                    <div class="p-5">
+                                        <div class="mb-4">
+                                            <h1 class="display-3 text-brown fontFranklin negrita">30% OFF</h1>
+                                            <h1 class="fontFranklin negrita">Para Reservas en Linea</h1>
+                                        </div>
+                                        <p class="fontLora">Lorem justo clita erat lorem labore ea, justo dolor lorem ipsum ut sed eos,
+                                            ipsum et dolor kasd sit ea justo. Erat justo sed sed diam. Ea et erat ut sed diam sea</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="text-center p-5" style="background: rgba(51, 33, 29, .8);">
+                                        <h1 class="fontFranklin negrita mb-4 mt-5">Reserva Tu Mesa</h1>
+                                        <form class="col mb-5">
+                                            <div class="row">
+                                                <input type="name" class="fontFranklin bg-transparent border-primary p-4" name="nombre" id="nombre" placeholder="Nombre"
+                                                    required="required" />
+                                            </div>
+                                            <div class="row">
+                                                <input type="email" name="email" id="email" class="fontFranklin bg-transparent border-primary p-4" placeholder="Correo Electrónico"
+                                                    required="required" />
+                                            </div>
+                                            <div class="row">
+                                                <input type="date" name="fecha" id="fecha" class="fontFranklin bg-transparent border-primary p-4" placeholder="Fecha"
+                                                    required="required" />
+                                            </div>
+                                            <div class="row">
+                                                <input type="time" name="hora" id="hora" class="fontFranklin bg-transparent border-primary p-4" placeholder="hora"
+                                                    required="required" />
+                                            </div>
+                                            <div class="row">
+                                                <input type="number" name="personas" id="personas" class="fontFranklin bg-transparent border-primary p-4" placeholder="Cantidad de personas"
+                                                    required="required" />
+                                            </div>
+                                            <div class="row">
+                                                <button class="mt-2 btn btn-borde btn-light-brown fontFranklin negrita py-3" type="submit">Reservar</button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
                             </div>
-                            <p class="fontLora">Lorem justo clita erat lorem labore ea, justo dolor lorem ipsum ut sed eos,
-                                ipsum et dolor kasd sit ea justo. Erat justo sed sed diam. Ea et erat ut sed diam sea</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-6">
-                        <div class="text-center p-5" style="background: rgba(51, 33, 29, .8);">
-                            <h1 class="fontFranklin negrita mb-4 mt-5">Reserva Tu Mesa</h1>
-                            <form class="col mb-5">
-                                <div class="row">
-                                    <input type="name" class="fontFranklin bg-transparent border-primary p-4" name="nombre" id="nombre" placeholder="Nombre"
-                                        required="required" />
-                                </div>
-                                <div class="row">
-                                    <input type="email" name="email" id="email" class="fontFranklin bg-transparent border-primary p-4" placeholder="Correo Electrónico"
-                                        required="required" />
-                                </div>
-                                <div class="row">
-                                    <input type="date" name="fecha" id="fecha" class="fontFranklin bg-transparent border-primary p-4" placeholder="Fecha"
-                                        required="required" />
-                                </div>
-                                <div class="row">
-                                    <input type="time" name="hora" id="hora" class="fontFranklin bg-transparent border-primary p-4" placeholder="hora"
-                                        required="required" />
-                                </div>
-                                <div class="row">
-                                    <input type="number" name="personas" id="personas" class="fontFranklin bg-transparent border-primary p-4" placeholder="Cantidad de personas"
-                                        required="required" />
-                                </div>
-                                <div class="row">
-                                    <button class="mt-2 btn btn-borde btn-light-brown fontFranklin negrita py-3" type="submit">Reservar</button>
-                                </div>
-                            </form>
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
-    </div>
             </section>
 
             <!-- Testimonios -->
-            <section>
-
+            <section class="container-fluid py-5">
+                <div class="container">
+                    <div class="section-titulo fontLora">
+                        <h4 class="text-brown interLetter-5 negrita">Testimonial</h4>
+                        <h1 class="display-4 text-black">Nuestros Clientes</h1>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="row align-items-center mb-3">
+                                <div class="col-4 col-sm-3">
+                                    <img class="w-100 mb-3 mb-sm-0" src="./assets/img/testimonial-1.jpg" alt="Café negro">
+                                </div>
+                                <div class="col-8 col-sm-9">
+                                    <h4 class="fontLora text-black negrita">Café Negro</h4>
+                                    <p class="m-0 fontLora text-black">Sit lorem ipsum et diam elitr est dolor sed duo guberg sea et et lorem dolor</p>
+                                </div>
+                            </div>
+                            <div class="row align-items-center mb-3">
+                                <div class="col-4 col-sm-3">
+                                    <img class="w-100 mb-3 mb-sm-0" src="./assets/img/testimonial-2.jpg" alt="Café con chocolate">
+                                </div>
+                                <div class="col-8 col-sm-9">
+                                    <h4 class="fontLora text-black negrita">Café Moca</h4>
+                                    <p class="m-0 fontLora text-black">Sit lorem ipsum et diam elitr est dolor sed duo guberg sea et et lorem dolor</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="row align-items-center mb-3">
+                                <div class="col-4 col-sm-3">
+                                    <img class="w-100 mb-3 mb-sm-0" src="./assets/img/testimonial-3.jpg" alt="Café negro">
+                                </div>
+                                <div class="col-8 col-sm-9">
+                                    <h4 class="fontLora text-black negrita">Café Negro</h4>
+                                    <p class="m-0 fontLora text-black">Sit lorem ipsum et diam elitr est dolor sed duo guberg sea et et lorem dolor</p>
+                                </div>
+                            </div>
+                            <div class="row align-items-center mb-3 b-1">
+                                <div class="col-4 col-sm-3">
+                                    <img class="w-100 mb-3 mb-sm-0" src="./assets/img/testimonial-4.jpg" alt="Café con chocolate">
+                                </div>
+                                <div class="col-8 col-sm-9">
+                                    <h4 class="fontLora text-black negrita">Café Moca</h4>
+                                    <p class="m-0 fontLora text-black">Sit lorem ipsum et diam elitr est dolor sed duo guberg sea et et lorem dolor</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </section>
         </main>
 
         <!-- Pie de pagina -->
-        <footer class = "estiloFooter colorBrown estiloFuente">
-            <p>Derechos de autor © 2023 Mariano C.</p>
+        <footer class = "estiloFooter">
+            <div class="container-fluid mt-5 pt-5 px-0 position-relative overlay-top">
+                <div class="row mx-0 pt-5 px-sm-3 px-lg-5 mt-4">
+                    <div class="col-lg-3 col-md-6 mb-5 fontFranklin">
+                        <h4 class="negrita text-uppercase mb-4" style="letter-spacing: 3px;">Contactanos</h4>
+                        <p><i class="fa fa-map-marker-alt mr-2"></i>123 Street, New York, USA</p>
+                        <p><i class="fa fa-phone-alt mr-2"></i>+012 345 67890</p>
+                        <p class="m-0"><i class="fa fa-envelope mr-2"></i>info@example.com</p>
+                    </div>
+                    <div class="col-lg-3 col-md-6 mb-5 fontFranklin">
+                        <h4 class="negrita text-uppercase mb-4" style="letter-spacing: 3px;">Nuestras Redes</h4>
+                        <p>Amet elitr vero magna sed ipsum sit kasd sea elitr lorem rebum</p>
+                        <div class="d-flex justify-content-start">
+                            <a class="btn btn-lg btn-outline-light btn-lg-square mr-2" href="#"><i class="fab fa-twitter"></i></a>
+                            <a class="btn btn-lg btn-outline-light btn-lg-square mr-2" href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-lg btn-outline-light btn-lg-square mr-2" href="#"><i class="fab fa-linkedin-in"></i></a>
+                            <a class="btn btn-lg btn-outline-light btn-lg-square" href="#"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 mb-5 fontFranklin">
+                        <h4 class="negrita text-uppercase mb-4" style="letter-spacing: 3px;">Horarios</h4>
+                        <div>
+                            <h6 class="text-uppercase">Lunes - Viernes</h6>
+                            <p>8.00 - 20.00 Hs</p>
+                            <h6 class="text-uppercase">Sabado - Domigo</h6>
+                            <p>14.00 - 20.00 Hs</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 mb-5 fontFranklin">
+                        <h4 class="negrita text-uppercase mb-4" style="letter-spacing: 3px;">Nuestro Boletín</h4>
+                        <p>Amet elitr vero magna sed ipsum sit kasd sea elitr lorem rebum</p>
+                        <div>
+                            <form>
+                                <input type="email" class=" w-100 fontFranklin bg- border-primary" style="background-color: #33211D;" name="email" id="emailFooter" placeholder="Correo Electrónico" required="required"/>
+                                <button class="btn btn-borde btn-light-brown fontFranklin negrita" type="submit">Suscribir</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="container-fluid fontLora border-top mt-4 py-1" style="border-color: rgba(256, 256, 256, .1) !important;">
+                    <p class="mt-3 text-center">Copyright &copy;2023 Mariano C. Todos los derechos reservados.</a></p>
+                </div>
+            </div>
         </footer>
-
         <!-- Linkeo de scripts de boostrap -->
         <script src="./js/bootstrap.bundle.min.js"></script>
     </body>
