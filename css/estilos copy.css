@@ -1,65 +1,67 @@
-@charset "UTF-8";
-
 /* Importo familia de fuentes desde google font - libreFranklin & Lora */
-@import url("https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,200;0,400;0,700;1,200;1,400;1,700&family=Lora:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,200;0,400;0,700;1,200;1,400;1,700&family=Lora:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
 /* ===================================== Estilos generales ==================================== */
+
 /* Reseteo de etiquetas html */
-* {
+*{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
 /* Se aplica estilo, color y tamaño de fuente */
-.fontLora {
+.fontLora{
   color: rgb(255, 255, 255);
   text-decoration: none;
-  font-family: "Lora", serif;
+  font-family: 'Lora', serif;
   font-weight: 400;
 }
 
-.fontFranklin {
+.fontFranklin{
   color: rgb(255, 255, 255);
   text-decoration: none;
-  font-family: "Libre Franklin", sans-serif;
+  font-family: 'Libre Franklin', sans-serif;
   font-weight: 400;
 }
 
-.negrita {
+.negrita{
   font-weight: 700;
 }
 
-.text-brown {
+.text-brown{
   color: rgb(255, 153, 0);
 }
 
-.text-black {
+.text-black{
   color: #33211D !important;
 }
 
-.interLetter-5 {
+.interLetter-5{
   letter-spacing: 5px;
 }
 
 /* ===================================== Estilos del header ==================================== */
+
 /* Tamaño del logo */
-.logo {
+.logo{
   width: 49px;
   height: 45px;
 }
 
-.customizedNav {
+.customizedNav{
   background-color: rgb(104, 81, 50);
 }
 
-@media (min-width: 992px) {
-  .customizedNav {
+@media  (min-width: 992px){
+  .customizedNav{
     position: absolute;
     background: none;
     width: 100%;
     z-index: 2;
   }
 }
+
 /* Personalizo el hover del nombre de la pyme */
 .navbar-brand:hover, .navbar-brand:focus {
   color: white;
@@ -71,7 +73,8 @@
 }
 
 /* ===================================== Estilos del main ==================================== */
-/* Estilos del carusel */
+
+ /* Estilos del carusel */
 .overlay-top::before,
 .overlay-bottom::after {
   position: absolute;
@@ -91,7 +94,6 @@
   bottom: -1px;
   background: url(../assets/img/overlay-bottom.png);
 }
-
 .carousel-focus {
   position: absolute;
   top: 0;
@@ -107,7 +109,6 @@
   padding: 115px 0 35px 0;
   text-align: center;
 }
-
 .section-titulo::after {
   position: absolute;
   content: "";
@@ -161,7 +162,7 @@
 .reservacion,
 .estiloFooter,
 .cabecera,
-.oferta {
+.oferta{
   background: linear-gradient(rgba(51, 33, 29, 0.85), rgba(51, 33, 29, 0.85)), url(../assets/img/bg.jpg);
   background-position: top;
   background-repeat: no-repeat;
@@ -183,15 +184,15 @@
   background: rgb(255, 153, 0);
 }
 
-.border-primary {
+.border-primary{
   border-color: rgb(255, 153, 0) !important;
 }
 
-::placeholder {
-  color: white;
-}
+::placeholder{
+   color: white; 
+} 
 
-.btn-borde {
+.btn-borde{
   border-radius: 0;
 }
 
@@ -207,5 +208,3 @@
   color: #33211D;
   background: rgb(255, 153, 0);
 }
-
-/*# sourceMappingURL=estilos.css.map */
