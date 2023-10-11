@@ -42,13 +42,13 @@
                                 <a class="nav-link fontLora" href="../pages/nosotros.html">Nosotros</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link fontLora" href="../pages/servicios.html">Servicios</a>
+                                <a class="nav-link fontLora text-brown" href="../pages/servicios.html">Servicios</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link fontLora" href="../pages/menu.html">Menú</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link fontLora text-brown" href="../pages/contacto.html">Contacto</a>
+                                <a class="nav-link fontLora" href="../pages/contacto.html">Contacto</a>
                             </li>
                         </ul>
                     </div>
@@ -56,55 +56,67 @@
             </nav>
         </header>
 
+        <!-- Fondo de cabecera -->
+        <section>
+            <div class="container-fluid cabecera mb-5 position-relative overlay-bottom">
+                <div class="d-flex flex-column align-items-center justify-content-center pt-0 pt-lg-5" style="min-height: 400px">
+                    <h1 class="display-3 mb-3 mt-0 mt-lg-5 text-uppercase fontLora">Nuestro Servicios</h1>
+                </div>
+            </div>
+        </section>
+
         <!-- Contenido principal -->
         <main> 
-            <!-- Fondo de cabecera -->
-            <section>
-                <div class="container-fluid cabecera mb-5 position-relative overlay-bottom">
-                    <div class="d-flex flex-column align-items-center justify-content-center pt-0 pt-lg-5" style="min-height: 400px">
-                        <h1 class="display-3 mb-3 mt-0 mt-lg-5 fontLora text-uppercase">Contacto</h1>
+             <!-- Servicios -->
+             <section class="container-fluid pt-5">
+                <div class="container">
+                    <div class="section-titulo fontLora">
+                        <h4 class="text-brown negrita interLetter-5">SERVICIOS</h4>
+                        <h1 class="display-4 text-black nagrita">Frescos y Orgánicos</h1>
                     </div>
-                </div>
-            </section>
-
-            <section>
-                <div class="container-fluid pt-5">
-                    <div class="container">
-                        <div class="section-titulo fontLora">
-                            <h4 class="display-6 text-brown negrita interLetter-5 text-uppercase">Siempre a tu disposición</h4>
-                        </div>
-                        <div class="row px-3 pb-2">
-                            <div class="col-sm-4 text-center mb-3">
-                                <i class="fa fa-2x fa-map-marker-alt mb-3 text-black"></i>
-                                <h4 class="font-weight-bold">Dirección</h4>
-                                <p>Calle 123, Tucumán, Argentina</p>
-                            </div>
-                            <div class="col-sm-4 text-center mb-3">
-                                <i class="fa fa-2x fa-phone-alt mb-3 text-black"></i>
-                                <h4 class="font-weight-bold">Teléfono</h4>
-                                <p>+54 381 xxxxxx</p>
-                            </div>
-                            <div class="col-sm-4 text-center mb-3">
-                                <i class="far fa-2x fa-envelope mb-3 text-black"></i>
-                                <h4 class="font-weight-bold">Correo</h4>
-                                <p>info@ejemplo.com</p>
+                    <div class="row">
+                        <div class="col-lg-6 mb-5">
+                            <div class="row align-items-center">
+                                <div class="col-sm-5">
+                                    <img class="img-fluid mb-3 mb-sm-0" src="../assets/img/service-1.jpg" alt="Sirviendo café" loading="lazy">
+                                </div>
+                                <div class="col-sm-7">
+                                    <h4 class="fontFranklin text-black negrita"><i class="fa fa-truck service-icon"></i>Entrega en Puerta</h4>
+                                    <p class="m-0 fontLora text-black">Te llevamos la experiencia de Coffee DOT directamente a tu puerta. Disfruta de nuestras deliciosas bebidas y bocadillos en la comodidad de tu hogar u oficina, con entregas rápidas y seguras.</p>
+                                </div>
                             </div>
                         </div>
-                        <div class="row">
-                            <div class="col-md-6 pb-5">
-                                <iframe style="width: 100%;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d113927.15975843626!2d-65.30499593076115!3d-26.832835032812074!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94223792d6c56903%3A0xf88d5b92b5c56527!2sSan%20Miguel%20de%20Tucum%C3%A1n%2C%20Tucum%C3%A1n!5e0!3m2!1ses-419!2sar!4v1696426785057!5m2!1ses-419!2sar" width="600" height="443" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        <div class="col-lg-6 mb-5">
+                            <div class="row align-items-center">
+                                <div class="col-sm-5">
+                                    <img class="img-fluid mb-3 mb-sm-0" src="../assets/img/service-2.jpg" alt="Sirviendo café" loading="lazy">
+                                </div>
+                                <div class="col-sm-7">
+                                    <h4 class="fontFranklin text-black negrita"><i class="fa fa-coffee service-icon"></i>Granos Frescos</h4>
+                                    <p class="m-0 fontLora text-black">Nuestros granos de café recién tostados garantizan una taza de café excepcional. Descubre una variedad de sabores y aromas en cada taza.</p>
+                                </div>
                             </div>
-                            <div class="col-md-6 pb-5">
-                                <form action="404.html" method="post">
-                                        <input type="text" class="form-control bg-transparent p-4" name="name" id="name" placeholder="Nombre" required="required"/>
-                                        <input type="email" class="form-control bg-transparent p-4" name="email" id="email" placeholder="Correo Electrónico" required="required"/>
-                                        <input type="text" class="form-control bg-transparent p-4" name="tema" id="subject" placeholder="Acerca de..." required="required"/>
-                                        <textarea class="form-control bg-transparent py-3 px-4" name="message" rows="5" id="message" placeholder="Mensaje"required="required"></textarea>
-                                    <div class="d-flex justify-content-between">
-                                        <button class="btn btn-brown btn-borde fontFranklin py-3 px-5" type="reset" id="resetButton">Limpiar</button>
-                                        <button class="btn btn-light-brown btn-borde fontFranklin py-3 px-5" type="submit" id="sendMessageButton">Enviar</button>
-                                    </div>
-                                </form>
+                        </div>
+                        <div class="col-lg-6 mb-5">
+                            <div class="row align-items-center">
+                                <div class="col-sm-5">
+                                    <img class="img-fluid mb-3 mb-sm-0" src="../assets/img/service-3.jpg" alt="Sirviendo café" loading="lazy">
+                                </div>
+                                <div class="col-sm-7">
+                                    <h4 class="fontFranklin text-black negrita"><i class="fa fa-award service-icon"></i>Calidad Inigualable</h4>
+                                    <p class="m-0 fontLora text-black">En Coffee DOT, la calidad es nuestra prioridad. Nos esforzamos constantemente por ofrecer la mejor calidad en cada taza de café, cada bocado de comida y en cada experiencia que compartes con nosotros.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 mb-5">
+                            <div class="row align-items-center">
+                                <div class="col-sm-5">
+                                    <img class="img-fluid mb-3 mb-sm-0" src="../assets/img/service-4.jpg" alt="Sirviendo café" loading="lazy">
+                                </div>
+                                <div class="col-sm-7">
+                                    <h4 class="fontFranklin text-black negrita"><i class="fa fa-table service-icon"></i>Reserva en Linea</h4>
+                                    <p class="m-0 fontLora text-black">Simplifica tu visita programando tu mesa en línea. Con nuestro servicio de reserva en línea, planificar tu encuentro en Coffee DOT es más conveniente que nunca.</p>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -157,7 +169,6 @@
                 </div>
             </div>
         </footer>
-
         <!-- Linkeo de scripts de boostrap -->
         <script src="../js/bootstrap.bundle.min.js"></script>
     </body>

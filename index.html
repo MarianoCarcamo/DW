@@ -7,74 +7,429 @@
         <meta charset="UTF-8"> <!-- Codigo de caracteres empleado -->
         <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Config. de la vista en pantalla -->
         <title>Coffee ● DOT | Sabor, historia y pasión</title> <!-- nombre de la pagina -->
-        <link rel="stylesheet" href="./css/bootstrap.min.css"> <!-- Linkeamos boostrap-->
-        <link rel="stylesheet" href="./css/estilos.css"> <!-- Linkeamos css al html-->
-        <link rel="icon" type="image/png" href="./favicon.ico"> <!-- Linkeamos el favicon-->
+
+        <!-- Linkeamos el favicon-->
+        <link rel="icon" type="image/png" href="./favicon.ico"> 
+
+        <!-- Font Awesome -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+
+        <!-- Linkeamos boostrap-->
+        <link rel="stylesheet" href="./css/bootstrap.min.css"> 
+
+        <!-- Linkeamos css al html-->
+        <link rel="stylesheet" href="./css/estilos.css"> 
     </head>
 
     <!-- El cuerpo contiene lo que el usuario puede ver. La mayoria del codigo esta aqui -->
     <body>
         <!-- Cabecera de pagina  -->
-        <header class="colorBrown">
-            <a class="estiloFuente" href="#">
-                <img class="logo" src="./assets/img/logo.png" alt="logo" loading="lazy">
-                Coffee ● DOT
-            </a>
-            <nav class="nav">
-                <ul>
-                    <li class="itemNav"><a class="estiloFuente" href = "#">Inicio</a></li>
-                    <li class="itemNav"><a class="estiloFuente" href = "./pages/salud.html">Nosotros</a></li>
-                    <li class="itemNav"><a class="estiloFuente" href = "./pages/cultura.html">Servicios</a></li>
-                    <li class="itemNav"><a class="estiloFuente" href = "./pages/tipos_y_estilos.html">Menú</a></li>
-                    <li class="itemNav"><a class="estiloFuente" href = "./pages/contacto.html">Contacto</a></li>
-                </ul>
+        <header>
+            <nav class="navbar navbar-expand-lg px-2 customizedNav">
+                <div class="container-fluid">
+                    <a class="navbar-brand fontLora" href="#">
+                        <img class="logo" src="./assets/img/logo.png" alt="logo" loading="lazy"> Coffee ● <span class="negrita">DOT</span>
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0 w-100 justify-content-end">
+                            <li class="nav-item">
+                                <a class="nav-link fontLora text-brown" href="#">Inicio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link fontLora" href="./pages/nosotros.html">Nosotros</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link fontLora" href="./pages/servicios.html">Servicios</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link fontLora" href="./pages/menu.html">Menú</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link fontLora" href="./pages/contacto.html">Contacto</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </nav>
         </header>
 
-        <!-- Contenido principal -->
-        <main class="fondoMain estiloFuente">
-            
-            <!-- Carrusel -->
-            <section>
-                
-            </section>
+        <!-- Carrusel -->
+        <section>
+            <div id="carouselExampleFade" class="carousel slide carousel-fade overlay-bottom" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="./assets/img/carousel-1.jpg" class="d-block w-100" alt="Taza de café en carrusel" loading="lazy">
+                        <div class="carousel-focus d-flex flex-column align-items-center justify-content-center">
+                            <h2 class="text-brown fontLora m-0">Sabor, Historia y Pasión</h2>
+                            <h2 class="text-brown fontLora m-0">en cada sorbo de</h2>
+                            <h1 class="fontFranklin display-1 negrita m-0">CAFÉ</h1>
+                            <h2 class="fontLora m-0">* DESDE 1998 *</h2>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./assets/img/carousel-2.jpg" class="d-block w-100" alt="Taza de café en carrusel" loading="lazy">
+                        <div class="carousel-focus d-flex flex-column align-items-center justify-content-center">
+                            <h2 class="text-brown fontLora m-0">Sabor, Historia y Pasión</h2>
+                            <h2 class="text-brown fontLora m-0">en cada sorbo de</h2>
+                            <h1 class="fontFranklin display-1 negrita m-0">CAFÉ</h1>
+                            <h2 class="fontLora m-0">* DESDE 1998 *</h2>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </section>
 
+        <main>
             <!-- Nosotros -->
-            <section>
-
+            <section class="container-fluid py-5">
+                <div class="container">
+                    <div class="section-titulo fontLora">
+                        <h4 class="text-brown negrita interLetter-5">SOBRE NOSOTROS</h4>
+                        <h1 class="display-4 text-black">Al Servicio Desde 1998</h1>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-4 py-0 py-lg-5">
+                            <h1 class="mb-3 text-black negrita fontFranklin">Historia</h1>
+                            <h5 class="mb-3 fontLora text-black">Coffee DOT, abrió sus puertas por primera vez el 8 de julio 1998 bajo la dirección de Samuel Jenkins, nuestro apasionado amante del café y hábil tostador.</h5>
+                            <p>Desde entonces, ha sido un punto de encuentro querido en la comunidad, sirviendo café recién tostado y creando un ambiente acogedor. A lo largo de las décadas, Coffee DOT ha mantenido su compromiso con la calidad y la autenticidad, convirtiéndose en un símbolo de la ciudad y un legado familiar que perdura hasta hoy.</p>
+                            <a href="./pages/nosotros.html" class="btn btn-borde btn-brown fontFranklin py-2 px-4 mt-2">Más</a>
+                        </div>
+                        <div class="col-lg-4 py-5 py-lg-0" style="min-height: 500px;">
+                            <div class="position-relative h-100">
+                                <img class="position-absolute w-100 h-100" src="./assets/img/about.png" style="object-fit: cover;" loading="lazy">
+                            </div>
+                        </div>
+                        <div class="col-lg-4 py-0 py-lg-5">
+                            <h1 class="mb-3 text-black negrita fontFranklin">Visión</h1>
+                            <p>La visión de Coffee DOT es ser el epicentro de la cultura del café, ofreciendo a nuestros clientes la mejor experiencia posible con café de alta calidad ademas de:</p>
+                            <h5 class="mb-3"><i class="fa fa-check text-brown me-3"></i>Un ambiente acogedor</h5>
+                            <h5 class="mb-3"><i class="fa fa-check text-brown me-3"></i>Recuerdos inolvidables</h5>
+                            <h5 class="mb-3"><i class="fa fa-check text-brown me-3"></i>Compromiso con la comunidad</h5>
+                            <a href="./pages/nosotros.html" class="btn btn-light-brown btn-borde fontFranklin py-2 px-4 mt-2">Más</a>
+                        </div>
+                    </div>
+                </div>
             </section>
 
             <!-- Servicios -->
-            <section>
-
+            <section class="container-fluid pt-5">
+                <div class="container">
+                    <div class="section-titulo fontLora">
+                        <h4 class="text-brown negrita interLetter-5">SERVICIOS</h4>
+                        <h1 class="display-4 text-black nagrita">Frescos y Orgánicos</h1>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-6 mb-5">
+                            <div class="row align-items-center">
+                                <div class="col-sm-5">
+                                    <img class="img-fluid mb-3 mb-sm-0" src="./assets/img/service-1.jpg" alt="Sirviendo café" loading="lazy">
+                                </div>
+                                <div class="col-sm-7">
+                                    <h4 class="fontFranklin text-black negrita"><i class="fa fa-truck service-icon"></i>Entrega en Puerta</h4>
+                                    <p class="m-0 fontLora text-black">Te llevamos la experiencia de Coffee DOT directamente a tu puerta. Disfruta de nuestras deliciosas bebidas y bocadillos en la comodidad de tu hogar u oficina, con entregas rápidas y seguras.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 mb-5">
+                            <div class="row align-items-center">
+                                <div class="col-sm-5">
+                                    <img class="img-fluid mb-3 mb-sm-0" src="./assets/img/service-2.jpg" alt="Sirviendo café" loading="lazy">
+                                </div>
+                                <div class="col-sm-7">
+                                    <h4 class="fontFranklin text-black negrita"><i class="fa fa-coffee service-icon"></i>Granos Frescos</h4>
+                                    <p class="m-0 fontLora text-black">Nuestros granos de café recién tostados garantizan una taza de café excepcional. Descubre una variedad de sabores y aromas en cada taza.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 mb-5">
+                            <div class="row align-items-center">
+                                <div class="col-sm-5">
+                                    <img class="img-fluid mb-3 mb-sm-0" src="./assets/img/service-3.jpg" alt="Sirviendo café" loading="lazy">
+                                </div>
+                                <div class="col-sm-7">
+                                    <h4 class="fontFranklin text-black negrita"><i class="fa fa-award service-icon"></i>Calidad Inigualable</h4>
+                                    <p class="m-0 fontLora text-black">En Coffee DOT, la calidad es nuestra prioridad. Nos esforzamos constantemente por ofrecer la mejor calidad en cada taza de café, cada bocado de comida y en cada experiencia que compartes con nosotros.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 mb-5">
+                            <div class="row align-items-center">
+                                <div class="col-sm-5">
+                                    <img class="img-fluid mb-3 mb-sm-0" src="./assets/img/service-4.jpg" alt="Sirviendo café" loading="lazy">
+                                </div>
+                                <div class="col-sm-7">
+                                    <h4 class="fontFranklin text-black negrita"><i class="fa fa-table service-icon"></i>Reserva en Linea</h4>
+                                    <p class="m-0 fontLora text-black">Simplifica tu visita programando tu mesa en línea. Con nuestro servicio de reserva en línea, planificar tu encuentro en Coffee DOT es más conveniente que nunca.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </section>
 
             <!-- Oferta -->
             <section>
-
+                <div class="oferta container-fluid my-5 py-5 text-center position-relative overlay-top overlay-bottom">
+                    <div class="container py-5">
+                        <h1 class="display-3 text-brown fontFranklin negrita mt-3">50% OFF</h1>
+                        <h1 class="fontFranklin negrita mb-3">Oferta Especial de Lunes</h1>
+                        <h4 class="fontFranklin mb-4 pb-3">Solo los Lunes del mes de Noviembre</h4>
+                        <form class="d-flex justify-content-center">
+                            <div class="mx-1">
+                                <label class="visually-hidden" for="inlineFormInputGroupUsername">Username</label>
+                                <div class="mx-1">
+                                    <input type="email" name="email" class="text-center border-primary p-1" style="background-color: #33211D;" id="inlineFormInputGroupUsername" placeholder="Correo Electrónico">
+                                </div>
+                            </div>
+                            <div class="mx-1">
+                                <button type="submit" class="btn btn-light-brown btn-borde negrita fontFranklin">Enviar</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
             </section>
 
             <!-- Menu -->
-            <section> 
-                
+            <section class="container-fluid pt-5"> 
+                <div class="container">
+                    <div class="section-titulo fontLora">
+                        <h4 class="text-brown negrita interLetter-5 text-uppercase">Menú & Precios</h4>
+                        <h1 class="display-4 text-black">Precios Competitivos</h1>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <h1 class="mb-5 fontFranklin text-black negrita">Café Caliente</h1>
+                            <div class="row align-items-center mb-3">
+                                <div class="col-4 col-sm-3">
+                                    <img class="w-100 rounded-circle mb-3 mb-sm-0" src="./assets/img/menu-1.jpg" alt="Espresso Clásico">
+                                    <h5 class="menu-precio">$850</h5>
+                                </div>
+                                <div class="col-8 col-sm-9">
+                                    <h4 class="fontLora text-black negrita">Espresso Clásico</h4>
+                                    <p class="m-0 fontLora text-black">Un espresso perfectamente equilibrado y aromático, con un sabor intenso y cremoso.</p>
+                                </div>
+                            </div>
+                            <div class="row align-items-center mb-3">
+                                <div class="col-4 col-sm-3">
+                                    <img class="w-100 rounded-circle mb-3 mb-sm-0" src="./assets/img/menu-2.jpg" alt="Café Latte de Vainilla">
+                                    <h5 class="menu-precio">$900</h5>
+                                </div>
+                                <div class="col-8 col-sm-9">
+                                    <h4 class="fontLora text-black negrita">Café Latte de Vainilla</h4>
+                                    <p class="m-0 fontLora text-black">Una deliciosa combinación de espresso suave y leche vaporizada con un toque de vainilla.</p>
+                                </div>
+                            </div>
+                            <div class="row align-items-center mb-3">
+                                <div class="col-4 col-sm-3">
+                                    <img class="w-100 rounded-circle mb-3 mb-sm-0" src="./assets/img/menu-3.jpg" alt="Café Mocha">
+                                    <h5 class="menu-precio">$950</h5>
+                                </div>
+                                <div class="col-8 col-sm-9">
+                                    <h4 class="fontLora text-black negrita">Café Mocha</h4>
+                                    <p class="m-0 fontLora text-black">La fusión perfecta entre nuestro espresso suave y chocolate de alta calidad, coronado con crema batida y un toque de cacao en polvo.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <h1 class="mb-5 fontFranklin text-black negrita">Café Frio</h1>
+                            <div class="row align-items-center mb-3">
+                                <div class="col-4 col-sm-3">
+                                    <img class="w-100 rounded-circle mb-3 mb-sm-0" src="./assets/img/menu-1.jpg" alt="Frappe de Café">
+                                    <h5 class="menu-precio">$850</h5>
+                                </div>
+                                <div class="col-8 col-sm-9">
+                                    <h4 class="fontLora text-black negrita">Frappe de Café</h4>
+                                    <p class="m-0 fontLora text-black">Café espresso suavemente mezclado con hielo y jarabe de vainilla.</p>
+                                </div>
+                            </div>
+                            <div class="row align-items-center mb-3">
+                                <div class="col-4 col-sm-3">
+                                    <img class="w-100 rounded-circle mb-3 mb-sm-0" src="./assets/img/menu-2.jpg" alt="Cold Brew">
+                                    <h5 class="menu-precio">$940</h5>
+                                </div>
+                                <div class="col-8 col-sm-9">
+                                    <h4 class="fontLora text-black negrita">Cold Brew</h4>
+                                    <p class="m-0 fontLora text-black">Nuestro café cold brew especial, infusionado durante horas para lograr una suavidad excepcional, servido con hielo y un toque de jarabe de caramelo.</p>
+                                </div>
+                            </div>
+                            <div class="row align-items-center mb-3">
+                                <div class="col-4 col-sm-3">
+                                    <img class="w-100 rounded-circle mb-3 mb-sm-0" src="./assets/img/menu-3.jpg" alt="Café Helado de Avellana">
+                                    <h5 class="menu-precio">$980</h5>
+                                </div>
+                                <div class="col-8 col-sm-9">
+                                    <h4 class="fontLora text-black negrita">Café Helado de Avellana</h4>
+                                    <p class="m-0 fontLora text-black">Café espresso mezclado con leche, hielo y un toque de jarabe de avellana, coronado con crema batida y virutas de chocolate.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </section>
 
             <!-- Reservacion -->
             <section>
-
+                <div class="container-fluid my-5">
+                    <div class="container">
+                        <div class="reservacion position-relative overlay-top overlay-bottom">
+                            <div class="row align-items-center">
+                                <div class="col-lg-6 my-5 my-lg-0">
+                                    <div class="p-5">
+                                        <div class="mb-4">
+                                            <h1 class="display-3 text-brown fontFranklin negrita">30% OFF</h1>
+                                            <h1 class="fontFranklin negrita">Para Reservas en Linea</h1>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="text-center p-5" style="background: rgba(51, 33, 29, .8);">
+                                        <h1 class="fontFranklin negrita mb-4 mt-5">Reserva Tu Mesa</h1>
+                                        <form class="col mb-5">
+                                            <div class="row">
+                                                <input type="name" class="fontFranklin bg-transparent border-primary p-4" name="nombre" id="nombre" placeholder="Nombre"
+                                                    required="required" />
+                                            </div>
+                                            <div class="row">
+                                                <input type="email" name="email" id="email" class="fontFranklin bg-transparent border-primary p-4" placeholder="Correo Electrónico"
+                                                    required="required" />
+                                            </div>
+                                            <div class="row">
+                                                <input type="date" name="fecha" id="fecha" class="fontFranklin bg-transparent border-primary p-4" placeholder="Fecha"
+                                                    required="required" />
+                                            </div>
+                                            <div class="row">
+                                                <input type="time" name="hora" id="hora" class="fontFranklin bg-transparent border-primary p-4" placeholder="hora"
+                                                    required="required" />
+                                            </div>
+                                            <div class="row">
+                                                <input type="number" name="personas" id="personas" class="fontFranklin bg-transparent border-primary p-4" placeholder="Cantidad de personas"
+                                                    required="required" />
+                                            </div>
+                                            <div class="row">
+                                                <button class="mt-2 btn btn-borde btn-light-brown fontFranklin negrita py-3" type="submit">Reservar</button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </section>
 
             <!-- Testimonios -->
-            <section>
-
+            <section class="container-fluid py-5">
+                <div class="container">
+                    <div class="section-titulo fontLora">
+                        <h4 class="text-brown interLetter-5 negrita text-uppercase">Testimonios</h4>
+                        <h1 class="display-4 text-black">Nuestros Clientes</h1>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="row align-items-center mb-3">
+                                <div class="col-4 col-sm-3">
+                                    <img class="w-100 mb-3 mb-sm-0" src="./assets/img/testimonial-1.jpg" alt="Café negro">
+                                </div>
+                                <div class="col-8 col-sm-9">
+                                    <h4 class="fontLora text-black negrita">María González</h4>
+                                    <p class="fontLora text-black">Estudiante de Arte</p>
+                                    <p class="m-0 fontLora text-black">"El arte y la creatividad fluyen en Coffee DOT. Siempre encuentro inspiración aquí. Además, sus eventos culturales y música en vivo son increíbles. Definitivamente mi lugar favorito en la ciudad."</p>
+                                </div>
+                            </div>
+                            <div class="row align-items-center mb-3">
+                                <div class="col-4 col-sm-3">
+                                    <img class="w-100 mb-3 mb-sm-0" src="./assets/img/testimonial-2.jpg" alt="Café con chocolate">
+                                </div>
+                                <div class="col-8 col-sm-9">
+                                    <h4 class="fontLora text-black negrita">Carlos Rodríguez</h4>
+                                    <p class="fontLora text-black">Ingeniero de Software</p>
+                                    <p class="m-0 fontLora text-black"> "Como amante del café, puedo decir que Coffee DOT tiene el mejor espresso en la ciudad. Sus granos frescos hacen toda la diferencia. Además, su servicio de entrega es rápido y confiable."</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="row align-items-center mb-3">
+                                <div class="col-4 col-sm-3">
+                                    <img class="w-100 mb-3 mb-sm-0" src="./assets/img/testimonial-3.jpg" alt="Café negro">
+                                </div>
+                                <div class="col-8 col-sm-9">
+                                    <h4 class="fontLora text-black negrita">Isabella Martínez</h4>
+                                    <p class="fontLora text-black">Profesora de Historia</p>
+                                    <p class="m-0 fontLora text-black">"Coffee DOT es mi refugio diario. Me encanta su café latte de vainilla y el ambiente tranquilo. Es el lugar perfecto para preparar mis clases y relajarme después de un largo día de trabajo."</p>
+                                </div>
+                            </div>
+                            <div class="row align-items-center mb-3 b-1">
+                                <div class="col-4 col-sm-3">
+                                    <img class="w-100 mb-3 mb-sm-0" src="./assets/img/testimonial-4.jpg" alt="Café con chocolate">
+                                </div>
+                                <div class="col-8 col-sm-9">
+                                    <h4 class="fontLora text-black negrita">Ricardo Sánchez</h4>
+                                    <p class="fontLora text-black">Empresario</p>
+                                    <p class="m-0 fontLora text-black">"Coffee DOT es mi lugar de reunión para importantes negociaciones. El ambiente discreto y el café de calidad son cruciales para cerrar acuerdos exitosos. ¡Nunca me ha decepcionado!"</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </section>
         </main>
 
         <!-- Pie de pagina -->
-        <footer class = "estiloFooter colorBrown estiloFuente">
-            <p>Derechos de autor © 2023 Mariano C.</p>
+        <footer class = "estiloFooter">
+            <div class="container-fluid mt-5 pt-5 px-0 position-relative overlay-top">
+                <div class="row mx-0 pt-5 px-sm-3 px-lg-5 mt-4">
+                    <div class="col-lg-3 col-md-6 mb-5 fontFranklin">
+                        <h4 class="negrita text-uppercase mb-4" style="letter-spacing: 3px;">Contactanos</h4>
+                        <p><i class="fa fa-map-marker-alt me-2"></i>Calle 123, Tucumán, Argentina</p>
+                        <p><i class="fa fa-phone-alt me-2"></i>+54 381 xxxxxx</p>
+                        <p class="m-0"><i class="fa fa-envelope me-2"></i>info@ejemplo.com</p>
+                    </div>
+                    <div class="col-lg-3 col-md-6 mb-5 fontFranklin">
+                        <h4 class="negrita text-uppercase mb-4" style="letter-spacing: 3px;">Nuestras Redes</h4>
+                        <p>Únete a nuestra comunidad en redes</p>
+                        <div class="d-flex justify-content-center gap-1">
+                            <a class="btn btn-borde btn-lg btn-outline-light btn-lg-square" href="https://twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
+                            <a class="btn btn-borde btn-lg btn-outline-light btn-lg-square" href="https://es-la.facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-borde btn-lg btn-outline-light btn-lg-square" href="https://ar.linkedin.com/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                            <a class="btn btn-borde btn-lg btn-outline-light btn-lg-square" href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 mb-5 fontFranklin text-center">
+                        <h4 class="negrita text-uppercase mb-4" style="letter-spacing: 3px;">Horarios</h4>
+                        <div>
+                            <h6 class="text-uppercase">Lunes - Viernes</h6>
+                            <p>8.00 - 20.00 Hs</p>
+                            <h6 class="text-uppercase">Sabado - Domigo</h6>
+                            <p>14.00 - 20.00 Hs</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 mb-5 fontFranklin">
+                        <h4 class="negrita text-uppercase mb-4" style="letter-spacing: 3px;">Nuestro Boletín</h4>
+                        <p>Suscribete a nuestro boletín para recibir noticias y ofertas exclusivas de Coffee DOT en tu bandeja de entrada.</p>
+                        <div>
+                            <form class="row">
+                                <input type="email" class="col-7 fontFranklin bg- border-primary" style="background-color: #33211D;" name="email" id="emailFooter" placeholder="Correo Electrónico" required="required"/>
+                                <button class="col-5 btn btn-borde btn-light-brown fontFranklin negrita" type="submit">Suscribir</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="container-fluid fontLora border-top mt-4 py-1" style="border-color: rgba(256, 256, 256, .1) !important;">
+                    <p class="mt-3 text-center">Copyright &copy;2023 Mariano C. Todos los derechos reservados.</a></p>
+                </div>
+            </div>
         </footer>
-
         <!-- Linkeo de scripts de boostrap -->
         <script src="./js/bootstrap.bundle.min.js"></script>
     </body>

@@ -11,109 +11,200 @@
 }
 
 /* Se aplica estilo, color y tamaño de fuente */
-.estiloFuente{
+.fontLora{
   color: rgb(255, 255, 255);
   text-decoration: none;
   font-family: 'Lora', serif;
-  font-size: 1.25rem;
   font-weight: 400;
 }
 
-p{
-  text-align: justify;
-  font-size: 0.95em;
+.fontFranklin{
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  font-family: 'Libre Franklin', sans-serif;
+  font-weight: 400;
+}
+
+.negrita{
+  font-weight: 700;
+}
+
+.text-brown{
+  color: rgb(255, 153, 0);
+}
+
+.text-black{
+  color: #33211D !important;
+}
+
+.interLetter-5{
+  letter-spacing: 5px;
 }
 
 /* ===================================== Estilos del header ==================================== */
 
-/* Color de fondo */
-.colorBrown{
-  background-color: rgb(94, 57, 9);
-}
-
 /* Tamaño del logo */
 .logo{
-    width: 107px;
-    height: 98px;
-    margin: 10px;
+  width: 49px;
+  height: 45px;
 }
 
-/* Propiedades de caja a la navegacion - Centramos en Y y aplicamos margen*/
-.nav{
-  display: inline-block;
-  position: relative;
-  margin: 10px;
-  bottom: 43px;
+.customizedNav{
+  background-color: rgb(104, 81, 50);
 }
 
-/* Quitamos los puntos de lista - Alineamos los items - Aplicamos margen para separarlos */
-.itemNav{
-    display: inline;
-    list-style: none;
-    margin: 20px;
+@media  (min-width: 992px){
+  .customizedNav{
+    position: absolute;
+    background: none;
+    width: 100%;
+    z-index: 2;
+  }
+}
+
+/* Personalizo el hover del nombre de la pyme */
+.navbar-brand:hover, .navbar-brand:focus {
+  color: white;
+}
+
+/* Personalizo el hover de la navegación */
+.nav-link:hover, .nav-link:focus {
+  color: rgb(255, 153, 0);
 }
 
 /* ===================================== Estilos del main ==================================== */
 
-/* Se aplica la imagen de fondo principal */
-.fondoMain{
-  background-image: url("../assets/img/coffee-beans.jpg"); 
-  height: 100vh;
+ /* Estilos del carusel */
+.overlay-top::before,
+.overlay-bottom::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 15px;
+  left: 0;
+  z-index: 1;
+}
+
+.overlay-top::before {
+  top: -1px;
+  background: url(../assets/img/overlay-top.png);
+}
+
+.overlay-bottom::after {
+  bottom: -1px;
+  background: url(../assets/img/overlay-bottom.png);
+}
+.carousel-focus {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(41, 28, 25, 0.521);
+  z-index: 1;
+}
+
+.section-titulo {
+  position: relative;
+  padding: 115px 0 35px 0;
+  text-align: center;
+}
+.section-titulo::after {
+  position: absolute;
+  content: "";
+  width: 2px;
+  height: 100px;
+  top: 0;
+  left: 50%;
+  margin-left: 1px;
+  background: rgb(255, 153, 0);
+}
+
+.btn-brown {
+  color: #fff;
+  background-color: #33211D;
+  border-color: #33211D;
+}
+
+.btn-brown:hover {
+  color: #fff;
+  background-color: #1b110f;
+  border-color: #120c0b;
+}
+
+.btn-brown:focus, .btn-brown.focus {
+  color: #fff;
+  background-color: #1b110f;
+  border-color: #120c0b;
+  box-shadow: 0 0 0 0.2rem rgba(82, 66, 63, 0.5);
+}
+
+.btn-light-brown {
+  color: #000000;
+  background-color: rgb(255, 153, 0);
+  border-color: #33211D;
+}
+
+.btn-light-brown:hover {
+  color: #fff;
+  background-color: #1b110f;
+  border-color: #120c0b;
+}
+
+.btn-light-brown:focus, .btn-light-brown.focus {
+  color: #fff;
+  background-color: #1b110f;
+  border-color: #120c0b;
+  box-shadow: 0 0 0 0.2rem rgba(82, 66, 63, 0.5);
+}
+
+/* Estilo seccion Oferta */
+.reservacion,
+.estiloFooter,
+.cabecera,
+.oferta{
+  background: linear-gradient(rgba(51, 33, 29, 0.85), rgba(51, 33, 29, 0.85)), url(../assets/img/bg.jpg);
+  background-position: top;
+  background-repeat: no-repeat;
   background-size: cover;
 }
 
-/* Se atenua la imagen de fondo */
-.fondoMain .boxAtenuado{
-  background-color: rgba(0, 0, 0, 0.6);
-  height: inherit;
-  overflow: hidden;
-}
-
-/* Se aplican propiedades de caja - Alejamos el contenido de los bordes */
-.seccionPrincipal{
-  padding-top: 5%;
-  padding-left: 10%;
-  padding-right: 10%;
-}
-
-/*  Cambios en fuente y centrado del titulo principal */
-.seccionPrincipal h1{
-  margin-bottom: 5%;
-  font-size: 3em;
-  font-weight: 400;
-  text-align: center;
-}
-
-/*  Cambios en fuente y alejamiento del subtitulo */
-.seccionPrincipal h2{
-  margin-bottom: 1%;
-  font-weight: 400;
-  font-style: italic;
-}
-
-/*  Cambios en fuente y alejamiento del subtitulo h3 */
-.seccionPrincipal h3{
-  margin-top: 2%;
-  margin-bottom: 1%;
-  font-weight: 400;
-  font-style: italic;
-  font-size: 1.25em;
-}
-
-/*  Espaciado entre parrafos */
-.seccionPrincipal p{
-  margin-bottom: 1%;
-}
-
-/* ===================================== Estilos del footer ==================================== */
-
-.estiloFooter{
-  height: 3vh;
-}
-
-.estiloFooter p{
-  font-size: 0.65em;
-  text-align: center;
+.menu-precio {
   position: relative;
-  top: 34%;
+  margin: 0;
+  bottom: 125px;
+  left: 90px;
+  width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 45px;
+  color: #33211D;
+  background: rgb(255, 153, 0);
+}
+
+.border-primary{
+  border-color: rgb(255, 153, 0) !important;
+}
+
+::placeholder{
+   color: white; 
+} 
+
+.btn-borde{
+  border-radius: 0;
+}
+
+.service-icon {
+  margin-right: 15px;
+  width: 45px;
+  height: 45px;
+  font-size: 18px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 45px;
+  color: #33211D;
+  background: rgb(255, 153, 0);
 }
