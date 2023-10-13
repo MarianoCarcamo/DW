@@ -1,0 +1,23 @@
+.negrita{
+    font-weight: 700;
+}
+
+.text-brown{
+    color: map-get($color, marron-claro);
+}
+
+.text-negro{
+    color: map-get($color, negro);
+}
+
+.interletraje{
+    letter-spacing: $interletraje;
+}
+
+.borde-primario{
+    border-color: map-get($color, marron-claro);
+}
+
+::placeholder{
+    color: white; 
+} 

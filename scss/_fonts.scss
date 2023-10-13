@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,200;0,400;0,700;1,200;1,400;1,700&family=Lora:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+.fontLora{
+    color: map-get($color, blanco);
+    text-decoration: none;
+    font-family: $tipografia-general;
+    font-weight: 400;
+  }
+  
+  .fontFranklin{
+    color: map-get($color, blanco);
+    text-decoration: none;
+    font-family: $tipografia-alternativa;
+    font-weight: 400;
+  }

@@ -1,0 +1,15 @@
+.section-titulo {
+    position: relative;
+    padding: 115px 0 35px 0;
+    text-align: center;
+    &:after{
+        position: absolute;
+        content: "";
+        width: 2px;
+        height: 100px;
+        top: 0;
+        left: 50%;
+        margin-left: 1px;
+        background: map-get($color, marron-claro);
+    }
+}

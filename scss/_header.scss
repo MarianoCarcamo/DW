@@ -1,0 +1,22 @@
+.customizedNav{
+    background-color: rgb(104, 81, 50);
+    .logo{
+        width: 49px;
+        height: 45px;
+    }
+    .navbar-brand:hover, .navbar-brand:focus{
+        color: white;
+    }
+    .nav-link:hover, .nav-link:focus {
+        color: map-get($color, marron-claro);
+    }
+}
+
+@media  (min-width: 992px){
+    .customizedNav{
+        position: absolute;
+        background: none;
+        width: 100%;
+        z-index: 2;
+    }
+}

@@ -1,25 +1,13 @@
-@charset "UTF-8";
-
-/* Importo familia de fuentes desde google font - libreFranklin & Lora */
 @import url("https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,200;0,400;0,700;1,200;1,400;1,700&family=Lora:ital,wght@0,400;0,700;1,400;1,700&display=swap");
-/* ===================================== Estilos generales ==================================== */
-/* Reseteo de etiquetas html */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-/* Se aplica estilo, color y tamaño de fuente */
 .fontLora {
-  color: rgb(255, 255, 255);
+  color: #ffffff;
   text-decoration: none;
   font-family: "Lora", serif;
   font-weight: 400;
 }
 
 .fontFranklin {
-  color: rgb(255, 255, 255);
+  color: #ffffff;
   text-decoration: none;
   font-family: "Libre Franklin", sans-serif;
   font-weight: 400;
@@ -33,23 +21,40 @@
   color: rgb(255, 153, 0);
 }
 
-.text-black {
-  color: #33211D !important;
+.text-negro {
+  color: #33211D;
 }
 
-.interLetter-5 {
+.interletraje {
   letter-spacing: 5px;
 }
 
-/* ===================================== Estilos del header ==================================== */
-/* Tamaño del logo */
-.logo {
-  width: 49px;
-  height: 45px;
+.borde-primario {
+  border-color: rgb(255, 153, 0);
+}
+
+::placeholder {
+  color: white;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 .customizedNav {
   background-color: rgb(104, 81, 50);
+}
+.customizedNav .logo {
+  width: 49px;
+  height: 45px;
+}
+.customizedNav .navbar-brand:hover, .customizedNav .navbar-brand:focus {
+  color: white;
+}
+.customizedNav .nav-link:hover, .customizedNav .nav-link:focus {
+  color: rgb(255, 153, 0);
 }
 
 @media (min-width: 992px) {
@@ -60,20 +65,46 @@
     z-index: 2;
   }
 }
-/* Personalizo el hover del nombre de la pyme */
-.navbar-brand:hover, .navbar-brand:focus {
-  color: white;
+.carousel-focus {
+  background: linear-gradient(rgba(41, 28, 25, 0.5215686275), rgba(41, 28, 25, 0.5215686275));
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
 }
 
-/* Personalizo el hover de la navegación */
-.nav-link:hover, .nav-link:focus {
-  color: rgb(255, 153, 0);
+.btn-borde {
+  border-radius: 0;
 }
 
-/* ===================================== Estilos del main ==================================== */
+.btn-hover:hover, .btn-brown:hover, .btn-light-brown:hover {
+  color: #fff;
+  background-color: #1b110f;
+  border-color: #120c0b;
+}
+
+.btn-focus:focus, .btn-brown:focus, .btn-light-brown:focus {
+  color: #fff;
+  background-color: #1b110f;
+  border-color: #120c0b;
+  box-shadow: 0 0 0 0.2rem rgba(82, 66, 63, 0.5019607843);
+}
+
+.btn-light-brown {
+  color: #000000;
+  background-color: rgb(255, 153, 0);
+  border-color: #33211D;
+}
+
+.btn-brown {
+  color: #fff;
+  background-color: #33211D;
+  border-color: #33211D;
+}
+
 /* Estilos del carusel */
-.overlay-top::before,
-.overlay-bottom::after {
+.overlay, .overlay-bottom::after, .overlay-top::before {
   position: absolute;
   content: "";
   width: 100%;
@@ -92,23 +123,12 @@
   background: url(../assets/img/overlay-bottom.png);
 }
 
-.carousel-focus {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: rgba(41, 28, 25, 0.521);
-  z-index: 1;
-}
-
 .section-titulo {
   position: relative;
   padding: 115px 0 35px 0;
   text-align: center;
 }
-
-.section-titulo::after {
+.section-titulo:after {
   position: absolute;
   content: "";
   width: 2px;
@@ -119,80 +139,29 @@
   background: rgb(255, 153, 0);
 }
 
-.btn-brown {
-  color: #fff;
-  background-color: #33211D;
-  border-color: #33211D;
-}
-
-.btn-brown:hover {
-  color: #fff;
-  background-color: #1b110f;
-  border-color: #120c0b;
-}
-
-.btn-brown:focus, .btn-brown.focus {
-  color: #fff;
-  background-color: #1b110f;
-  border-color: #120c0b;
-  box-shadow: 0 0 0 0.2rem rgba(82, 66, 63, 0.5);
-}
-
-.btn-light-brown {
-  color: #000000;
-  background-color: rgb(255, 153, 0);
-  border-color: #33211D;
-}
-
-.btn-light-brown:hover {
-  color: #fff;
-  background-color: #1b110f;
-  border-color: #120c0b;
-}
-
-.btn-light-brown:focus, .btn-light-brown.focus {
-  color: #fff;
-  background-color: #1b110f;
-  border-color: #120c0b;
-  box-shadow: 0 0 0 0.2rem rgba(82, 66, 63, 0.5);
-}
-
-/* Estilo seccion Oferta */
-.reservacion,
-.estiloFooter,
-.cabecera,
-.oferta {
-  background: linear-gradient(rgba(51, 33, 29, 0.85), rgba(51, 33, 29, 0.85)), url(../assets/img/bg.jpg);
-  background-position: top;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
 .menu-precio {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: relative;
   margin: 0;
   bottom: 125px;
   left: 90px;
   width: 45px;
   height: 45px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   border-radius: 45px;
   color: #33211D;
   background: rgb(255, 153, 0);
 }
 
-.border-primary {
-  border-color: rgb(255, 153, 0) !important;
-}
-
-::placeholder {
-  color: white;
-}
-
-.btn-borde {
-  border-radius: 0;
+.reservacion,
+.estiloFooter,
+.cabecera,
+.oferta {
+  background: linear-gradient(rgba(51, 33, 29, 0.8509803922), rgba(51, 33, 29, 0.8509803922)), url(../assets/img/bg.jpg);
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .service-icon {

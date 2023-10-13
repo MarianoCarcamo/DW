@@ -1,0 +1,35 @@
+.btn-borde{
+    border-radius: 0;
+}
+
+.btn-hover{
+    &:hover{
+        color: #fff;
+        background-color: #1b110f;
+        border-color: #120c0b;
+    }
+}
+
+.btn-focus{
+    &:focus{
+        color: #fff;
+        background-color: #1b110f;
+        border-color: #120c0b;
+        box-shadow: 0 0 0 0.2rem #52423f80;
+    }
+}
+
+.btn-light-brown {
+    color: #000000;
+    background-color: map-get($color, marron-claro);
+    border-color: map-get($color, negro);
+    @extend .btn-hover, .btn-focus;
+
+}
+
+.btn-brown {
+    color: #fff;
+    background-color: map-get($color, negro);
+    border-color: map-get($color, negro);
+    @extend .btn-hover, .btn-focus;
+}

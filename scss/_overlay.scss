@@ -1,0 +1,21 @@
+ /* Estilos del carusel */
+.overlay {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 15px;
+    left: 0;
+    z-index: 1;
+}
+ 
+.overlay-top::before {
+    @extend .overlay;
+    top: -1px;
+    background: url(../assets/img/overlay-top.png);
+}
+ 
+.overlay-bottom::after {
+    @extend .overlay;
+    bottom: -1px;
+    background: url(../assets/img/overlay-bottom.png);
+}

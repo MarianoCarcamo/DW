@@ -1,0 +1,12 @@
+.service-icon {
+    margin-right: 15px;
+    width: 45px;
+    height: 45px;
+    font-size: 18px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 45px;
+    color: map-get($color, negro);
+    background: map-get($color, marron-claro);
+}
