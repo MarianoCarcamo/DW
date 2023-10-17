@@ -7,8 +7,12 @@
     .navbar-brand:hover, .navbar-brand:focus{
         color: white;
     }
-    .nav-link:hover, .nav-link:focus {
-        color: map-get($color, marron-claro);
+    .nav-link{
+        transition: color 0.25s ease-in-out, transform 0.25s ease-in-out;
+        &:hover, &:focus{
+            color: map-get($color, marron-claro);
+            transform: scale(1.1);
+        }
     }
 }
 
