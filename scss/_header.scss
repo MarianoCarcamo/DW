@@ -17,7 +17,7 @@
         transition: color 0.25s ease-in-out, transform 0.25s ease-in-out;
         &:hover, &:focus{
             color: map-get($color, marron-claro);
-            transform: scale(1.1) translateX(20px);
+            transform: scale(1.005);
             @media  (min-width: 992px){
                 transform: scale(1.1);
             }
