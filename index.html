@@ -69,16 +69,16 @@
             <div id="carouselExampleFade" class="carousel slide carousel-fade overlay-bottom" data-bs-ride="carousel">
                 <div class="carousel-inner">
                     <div class="carousel-item active" data-bs-interval="8000">
-                        <img src="./assets/img/carousel-1.jpg" class="d-block w-100" alt="Taza de café en carrusel" loading="lazy">
+                        <img src="./assets/img/carousel-1.jpg" srcset="./assets/img/carousel-1-small.jpg 1024w, ./assets/img/carousel-1.jpg 1920w" class="d-block w-100" alt="Taza de café en carrusel" loading="lazy">
                     </div>
                     <div class="carousel-item" data-bs-interval="8000">
-                        <img src="./assets/img/carousel-2.jpg" class="d-block w-100" alt="Taza de café en carrusel" loading="lazy">
+                        <img src="./assets/img/carousel-2.jpg" srcset="./assets/img/carousel-2-small.jpg 1024w, ./assets/img/carousel-2.jpg 1920w" class="d-block w-100" alt="Taza de café en carrusel" loading="lazy">
                     </div>
                     <div class="carousel-item" data-bs-interval="8000">
-                        <img src="./assets/img/carousel-3.jpg" class="d-block w-100" alt="Taza de café en carrusel" loading="lazy">
+                        <img src="./assets/img/carousel-3.jpg" srcset="./assets/img/carousel-3-small.jpg 1024w, ./assets/img/carousel-3.jpg 1920w" class="d-block w-100" alt="Cafetería en carrusel" loading="lazy">
                     </div>
                     <div class="carousel-item" data-bs-interval="8000">
-                        <img src="./assets/img/carousel-4.jpg" class="d-block w-100" alt="Taza de café en carrusel" loading="lazy">
+                        <img src="./assets/img/carousel-4.jpg" srcset="./assets/img/carousel-4-small.jpg 1024w, ./assets/img/carousel-4.jpg 1920w" class="d-block w-100" alt="Amigos reunidos en una cafetería en carrusel" loading="lazy">
                     </div>
                 </div>
                 <div class=" carousel-focus d-flex flex-column align-items-center justify-content-center animate__animated animate__fadeIn animate__delay-5s animate__slower z-1">
@@ -107,14 +107,14 @@
                         <h2 class="display-4 text-negro">Al Servicio Desde 1998</h2>
                     </div>
                     <div class="row">
-                        <div class="col-lg-4 py-0 py-lg-5" data-aos="fade-right" data-aos-offset="500" data-aos-once=»true» data-aos-duration="1000">
+                        <div class= "col-lg-4 py-0 py-lg-5" data-aos="fade-right" data-aos-offset="500" data-aos-once=»true» data-aos-duration="1000">
                             <h2 class="display-5 mb-3 text-negro negrita fontFranklin">Historia</h2>
                             <h3 class="fs-5 mb-3 fontLora text-negro">Coffee DOT, abrió sus puertas por primera vez el 8 de julio 1998 bajo la dirección de Samuel Jenkins, nuestro apasionado amante del café y hábil tostador.</h3>
                             <p>Desde entonces, ha sido un punto de encuentro querido en la comunidad, sirviendo café recién tostado y creando un ambiente acogedor. A lo largo de las décadas, Coffee DOT ha mantenido su compromiso con la calidad y la autenticidad, convirtiéndose en un símbolo de la ciudad y un legado familiar que perdura hasta hoy.</p>
                             <a href="./pages/nosotros.html" class="btn btn-borde btn-brown fontFranklin py-2 px-4 mt-2">Más</a>
                         </div>
-                        <div class="col-lg-4 py-5 py-lg-0" style="min-height: 500px;">
-                            <div class="position-relative h-100">
+                        <div class="col-lg-4 py-5 py-lg-0" style="min-height: 600px;">
+                            <div class="position-relative h-100 d-flex flex-column">
                                 <img class="position-absolute w-100 h-100" src="./assets/img/about.png" style="object-fit: cover;" loading="lazy">
                             </div>
                         </div>
@@ -195,7 +195,7 @@
                             <h3 class="display-5 fontFranklin negrita mb-3">Oferta Especial de Lunes</h3>
                             <h4 class="fontFranklin mb-4 pb-3">Solo los Lunes del mes de Noviembre</h4>
                         </div>
-                        <form class="d-flex justify-content-center">
+                        <form action="./pages/404.html" method="post" class="d-flex justify-content-center">
                             <div class="mx-1">
                                 <label class="visually-hidden" for="inlineFormInputGroupUsername">Username</label>
                                 <div class="mx-1">
@@ -305,7 +305,7 @@
                                 <div class="col-lg-6">
                                     <div class="text-center p-5" style="background: rgba(51, 33, 29, .8);">
                                         <h2 class="fontFranklin negrita mb-4 mt-5">Reserva Tu Mesa</h2>
-                                        <form class="col mb-5">
+                                        <form action="./pages/404.html" method="post" class="col mb-5">
                                             <div class="row">
                                                 <input type="name" class="fontFranklin bg-transparent borde-primario p-4" name="nombre" id="nombre" placeholder="Nombre"
                                                     required="required" />
@@ -427,7 +427,7 @@
                     <div class="col-lg-3 col-md-6 mb-5 fontFranklin">
                         <h2 class="fs-3 negrita text-uppercase mb-4" style="letter-spacing: 3px;">Nuestro Boletín</h2>
                         <p>Suscribete a nuestro boletín para recibir noticias y ofertas exclusivas de Coffee DOT en tu bandeja de entrada.</p>
-                        <form class="row">
+                        <form action="./pages/404.html" method="post" class="row">
                             <input type="email" class="col-7 fontFranklin bg- borde-primario" style="background-color: #33211D;" name="email" id="emailFooter" placeholder="Correo Electrónico" required="required"/>
                             <input class="col-5 btn btn-borde btn-light-brown fontFranklin negrita" type="submit"></input>
                         </form>
