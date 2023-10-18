@@ -6,7 +6,12 @@
     <head>
         <meta charset="UTF-8"> <!-- Codigo de caracteres empleado -->
         <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Config. de la vista en pantalla -->
-        <title>Coffee ● DOT | Sabor, historia y pasión</title> <!-- nombre de la pagina -->
+
+        <meta name="description" content="Nuestra pasión es el café excepcional. Cada taza es una obra maestra de sabor, desde nuestro espresso clásico hasta los refrescantes cafés fríos. Descubre la diferencia en Coffee DOT.">
+
+        <meta name="keywords" content="Café de calidad, Cafetería acogedora, Espresso excepcional, Café tostado fresco, Eventos culturales, Comunidad cafetera, Café caliente y frío, Menú de café, Entrega a domicilio, Reservas en línea, Coffee DOT, Café gourmet, Ambiente relajante, Café y pasteles, Boletín de noticias, Ofertas especiales, Experiencia de café, Arte y café, Café, Calidad, Comunidad, Ambiente">
+
+        <title>Contacto | Coffee ● DOT</title> <!-- nombre de la pagina -->
 
         <!-- Linkeamos el favicon-->
         <link rel="icon" type="image/png" href="../favicon.ico"> 
@@ -19,6 +24,9 @@
 
         <!-- Linkeamos css al html-->
         <link rel="stylesheet" href="../css/estilos.css"> 
+
+        <!-- Linkeamos aos-->
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     </head>
 
     <!-- El cuerpo contiene lo que el usuario puede ver. La mayoria del codigo esta aqui -->
@@ -27,14 +35,14 @@
         <header>
             <nav class="navbar navbar-expand-lg px-2 customizedNav">
                 <div class="container-fluid">
-                    <a class="navbar-brand fontLora" href="../index.html">
-                        <img class="logo" src="../assets/img/logo.png" alt="logo" loading="lazy"> Coffee ● <span class="negrita">DOT</span>
+                    <a class="navbar-brand fontLora fs-3" href="../index.html">
+                        <img class="logo" src="../assets/img/logo.png" alt="logo" loading="lazy"> Coffee<span class="negrita text-brown"> ● DOT</span>
                     </a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav me-auto mb-2 mb-lg-0 w-100 justify-content-end">
+                        <ul class="fs-5 navbar-nav me-auto mb-2 mb-lg-0 w-100 justify-content-end">
                             <li class="nav-item">
                                 <a class="nav-link fontLora" href="../index.html">Inicio</a>
                             </li>
@@ -62,7 +70,7 @@
             <section>
                 <div class="container-fluid cabecera mb-5 position-relative overlay-bottom">
                     <div class="d-flex flex-column align-items-center justify-content-center pt-0 pt-lg-5" style="min-height: 400px">
-                        <h1 class="display-3 mb-3 mt-0 mt-lg-5 fontLora text-uppercase">Contacto</h1>
+                        <h1 class="display-3 mb-3 mt-0 mt-lg-5 fontLora text-uppercase text-brown">Contacto</h1>
                     </div>
                 </div>
             </section>
@@ -74,35 +82,35 @@
                             <h4 class="display-6 text-brown negrita interLetter-5 text-uppercase">Siempre a tu disposición</h4>
                         </div>
                         <div class="row px-3 pb-2">
-                            <div class="col-sm-4 text-center mb-3">
+                            <div class="col-sm-4 text-center mb-3 animate__animated animate__fadeIn animate__slow animate__delay-2s">
                                 <i class="fa fa-2x fa-map-marker-alt mb-3 text-black"></i>
                                 <h4 class="font-weight-bold">Dirección</h4>
                                 <p>Calle 123, Tucumán, Argentina</p>
                             </div>
-                            <div class="col-sm-4 text-center mb-3">
+                            <div class="col-sm-4 text-center mb-3 animate__animated animate__fadeIn animate__slow animate__delay-3s">
                                 <i class="fa fa-2x fa-phone-alt mb-3 text-black"></i>
                                 <h4 class="font-weight-bold">Teléfono</h4>
                                 <p>+54 381 xxxxxx</p>
                             </div>
-                            <div class="col-sm-4 text-center mb-3">
+                            <div class="col-sm-4 text-center mb-3 animate__animated animate__fadeIn animate__slow animate__delay-4s">
                                 <i class="far fa-2x fa-envelope mb-3 text-black"></i>
                                 <h4 class="font-weight-bold">Correo</h4>
                                 <p>info@ejemplo.com</p>
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col-md-6 pb-5">
+                            <div class="col-md-6 pb-5" data-aos="fade-right" data-aos-offset="500" data-aos-once=»true» data-aos-duration="1000">
                                 <iframe style="width: 100%;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d113927.15975843626!2d-65.30499593076115!3d-26.832835032812074!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94223792d6c56903%3A0xf88d5b92b5c56527!2sSan%20Miguel%20de%20Tucum%C3%A1n%2C%20Tucum%C3%A1n!5e0!3m2!1ses-419!2sar!4v1696426785057!5m2!1ses-419!2sar" width="600" height="443" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                             </div>
-                            <div class="col-md-6 pb-5">
+                            <div class="col-md-6 pb-5" data-aos="fade-left" data-aos-offset="500" data-aos-once=»true» data-aos-duration="1000">
                                 <form action="404.html" method="post">
-                                        <input type="text" class="form-control bg-transparent p-4" name="name" id="name" placeholder="Nombre" required="required"/>
-                                        <input type="email" class="form-control bg-transparent p-4" name="email" id="email" placeholder="Correo Electrónico" required="required"/>
-                                        <input type="text" class="form-control bg-transparent p-4" name="tema" id="subject" placeholder="Acerca de..." required="required"/>
-                                        <textarea class="form-control bg-transparent py-3 px-4" name="message" rows="5" id="message" placeholder="Mensaje"required="required"></textarea>
+                                    <input type="text" class="form-control bg-transparent p-4" name="name" id="name" placeholder="Nombre" required="required"/>
+                                    <input type="email" class="form-control bg-transparent p-4" name="email" id="email" placeholder="Correo Electrónico" required="required"/>
+                                    <input type="text" class="form-control bg-transparent p-4" name="tema" id="subject" placeholder="Acerca de..." required="required"/>
+                                    <textarea class="form-control bg-transparent py-3 px-4" name="message" rows="5" id="message" placeholder="Mensaje"required="required"></textarea>
                                     <div class="d-flex justify-content-between">
-                                        <button class="btn btn-brown btn-borde fontFranklin py-3 px-5" type="reset" id="resetButton">Limpiar</button>
-                                        <button class="btn btn-light-brown btn-borde fontFranklin py-3 px-5" type="submit" id="sendMessageButton">Enviar</button>
+                                        <input class="btn btn-brown btn-borde fontFranklin py-3 px-5" type="reset" id="resetButton"></input>
+                                        <input class="btn btn-light-brown btn-borde fontFranklin py-3 px-5" type="submit" id="sendMessageButton"></input>
                                     </div>
                                 </form>
                             </div>
@@ -157,7 +165,13 @@
         </footer>
 
         <!-- Linkeo de scripts de boostrap -->
-        <script src="../js/bootstrap.bundle.min.js"></script>
+        <script src="./js/bootstrap.bundle.min.js"></script>
+
+        <!-- linkeo el script de AOS-->
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
     </body>
 
 </html>

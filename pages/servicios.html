@@ -6,7 +6,12 @@
     <head>
         <meta charset="UTF-8"> <!-- Codigo de caracteres empleado -->
         <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Config. de la vista en pantalla -->
-        <title>Coffee ● DOT | Sabor, historia y pasión</title> <!-- nombre de la pagina -->
+
+        <meta name="description" content="Nuestra pasión es el café excepcional. Cada taza es una obra maestra de sabor, desde nuestro espresso clásico hasta los refrescantes cafés fríos. Descubre la diferencia en Coffee DOT.">
+
+        <meta name="keywords" content="Café de calidad, Cafetería acogedora, Espresso excepcional, Café tostado fresco, Eventos culturales, Comunidad cafetera, Café caliente y frío, Menú de café, Entrega a domicilio, Reservas en línea, Coffee DOT, Café gourmet, Ambiente relajante, Café y pasteles, Boletín de noticias, Ofertas especiales, Experiencia de café, Arte y café, Café, Calidad, Comunidad, Ambiente">
+
+        <title>Servicios | Coffee ● DOT</title> <!-- nombre de la pagina -->
 
         <!-- Linkeamos el favicon-->
         <link rel="icon" type="image/png" href="../favicon.ico"> 
@@ -19,6 +24,9 @@
 
         <!-- Linkeamos css al html-->
         <link rel="stylesheet" href="../css/estilos.css"> 
+
+        <!-- Linkeamos aos-->
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     </head>
 
     <!-- El cuerpo contiene lo que el usuario puede ver. La mayoria del codigo esta aqui -->
@@ -27,14 +35,14 @@
         <header>
             <nav class="navbar navbar-expand-lg px-2 customizedNav">
                 <div class="container-fluid">
-                    <a class="navbar-brand fontLora" href="../index.html">
-                        <img class="logo" src="../assets/img/logo.png" alt="logo" loading="lazy"> Coffee ● <span class="negrita">DOT</span>
+                    <a class="navbar-brand fontLora fs-3" href="../index.html">
+                        <img class="logo" src="../assets/img/logo.png" alt="logo" loading="lazy"> Coffee<span class="negrita text-brown"> ● DOT</span>
                     </a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav me-auto mb-2 mb-lg-0 w-100 justify-content-end">
+                        <ul class="fs-5 navbar-nav me-auto mb-2 mb-lg-0 w-100 justify-content-end">
                             <li class="nav-item">
                                 <a class="nav-link fontLora" href="../index.html">Inicio</a>
                             </li>
@@ -60,68 +68,65 @@
         <section>
             <div class="container-fluid cabecera mb-5 position-relative overlay-bottom">
                 <div class="d-flex flex-column align-items-center justify-content-center pt-0 pt-lg-5" style="min-height: 400px">
-                    <h1 class="display-3 mb-3 mt-0 mt-lg-5 text-uppercase fontLora">Nuestro Servicios</h1>
+                    <h1 class="display-3 mb-3 mt-0 mt-lg-5 text-uppercase fontLora text-brown">Nuestro Servicios</h1>
                 </div>
             </div>
         </section>
 
         <!-- Contenido principal -->
-        <main> 
-             <!-- Servicios -->
-             <section class="container-fluid pt-5">
-                <div class="container">
-                    <div class="section-titulo fontLora">
-                        <h4 class="text-brown negrita interLetter-5">SERVICIOS</h4>
-                        <h1 class="display-4 text-black nagrita">Frescos y Orgánicos</h1>
+        <main class="container-fluid pt-5"> 
+            <div class="container">
+                <div class="section-titulo fontLora">
+                    <h3 class="text-brown negrita interletraje">SERVICIOS</h3>
+                    <h2 class="display-4 text-negro nagrita">Frescos y Orgánicos</h2>
+                </div>
+                <div class="row" data-aos="fade" data-aos-offset="500" data-aos-duration="1000" data-aos-once=»true»>
+                    <div class="col-lg-6 mb-5">
+                        <div class="row align-items-center">
+                            <div class="col-sm-5">
+                                <img class="img-fluid mb-3 mb-sm-0" src="../assets/img/service-1.jpg" alt="Sirviendo café" loading="lazy">
+                            </div>
+                            <div class="col-sm-7">
+                                <h2 class="fs-4 fontFranklin text-negro negrita"><i class="fa fa-truck service-icon"></i>Entrega en Puerta</h2>
+                                <p class="m-0 fontLora text-negro">Te llevamos la experiencia de Coffee DOT directamente a tu puerta. Disfruta de nuestras deliciosas bebidas y bocadillos en la comodidad de tu hogar u oficina, con entregas rápidas y seguras.</p>
+                            </div>
+                        </div>
                     </div>
-                    <div class="row">
-                        <div class="col-lg-6 mb-5">
-                            <div class="row align-items-center">
-                                <div class="col-sm-5">
-                                    <img class="img-fluid mb-3 mb-sm-0" src="../assets/img/service-1.jpg" alt="Sirviendo café" loading="lazy">
-                                </div>
-                                <div class="col-sm-7">
-                                    <h4 class="fontFranklin text-black negrita"><i class="fa fa-truck service-icon"></i>Entrega en Puerta</h4>
-                                    <p class="m-0 fontLora text-black">Te llevamos la experiencia de Coffee DOT directamente a tu puerta. Disfruta de nuestras deliciosas bebidas y bocadillos en la comodidad de tu hogar u oficina, con entregas rápidas y seguras.</p>
-                                </div>
+                    <div class="col-lg-6 mb-5">
+                        <div class="row align-items-center">
+                            <div class="col-sm-5">
+                                <img class="img-fluid mb-3 mb-sm-0" src="../assets/img/service-2.jpg" alt="Sirviendo café" loading="lazy">
+                            </div>
+                            <div class="col-sm-7">
+                                <h2 class="fs-4 fontFranklin text-negro negrita"><i class="fa fa-coffee service-icon"></i>Granos Frescos</h2>
+                                <p class="m-0 fontLora text-negro">Nuestros granos de café recién tostados garantizan una taza de café excepcional. Descubre una variedad de sabores y aromas en cada taza.</p>
                             </div>
                         </div>
-                        <div class="col-lg-6 mb-5">
-                            <div class="row align-items-center">
-                                <div class="col-sm-5">
-                                    <img class="img-fluid mb-3 mb-sm-0" src="../assets/img/service-2.jpg" alt="Sirviendo café" loading="lazy">
-                                </div>
-                                <div class="col-sm-7">
-                                    <h4 class="fontFranklin text-black negrita"><i class="fa fa-coffee service-icon"></i>Granos Frescos</h4>
-                                    <p class="m-0 fontLora text-black">Nuestros granos de café recién tostados garantizan una taza de café excepcional. Descubre una variedad de sabores y aromas en cada taza.</p>
-                                </div>
+                    </div>
+                    <div class="col-lg-6 mb-5">
+                        <div class="row align-items-center">
+                            <div class="col-sm-5">
+                                <img class="img-fluid mb-3 mb-sm-0" src="../assets/img/service-3.jpg" alt="Sirviendo café" loading="lazy">
+                            </div>
+                            <div class="col-sm-7">
+                                <h2 class="fs-4 fontFranklin text-negro negrita"><i class="fa fa-award service-icon"></i>Calidad Inigualable</h2>
+                                <p class="m-0 fontLora text-negro">En Coffee DOT, la calidad es nuestra prioridad. Nos esforzamos constantemente por ofrecer la mejor calidad en cada taza de café, cada bocado de comida y en cada experiencia que compartes con nosotros.</p>
                             </div>
                         </div>
-                        <div class="col-lg-6 mb-5">
-                            <div class="row align-items-center">
-                                <div class="col-sm-5">
-                                    <img class="img-fluid mb-3 mb-sm-0" src="../assets/img/service-3.jpg" alt="Sirviendo café" loading="lazy">
-                                </div>
-                                <div class="col-sm-7">
-                                    <h4 class="fontFranklin text-black negrita"><i class="fa fa-award service-icon"></i>Calidad Inigualable</h4>
-                                    <p class="m-0 fontLora text-black">En Coffee DOT, la calidad es nuestra prioridad. Nos esforzamos constantemente por ofrecer la mejor calidad en cada taza de café, cada bocado de comida y en cada experiencia que compartes con nosotros.</p>
-                                </div>
+                    </div>
+                    <div class="col-lg-6 mb-5">
+                        <div class="row align-items-center">
+                            <div class="col-sm-5">
+                                <img class="img-fluid mb-3 mb-sm-0" src="../assets/img/service-4.jpg" alt="Sirviendo café" loading="lazy">
                             </div>
-                        </div>
-                        <div class="col-lg-6 mb-5">
-                            <div class="row align-items-center">
-                                <div class="col-sm-5">
-                                    <img class="img-fluid mb-3 mb-sm-0" src="../assets/img/service-4.jpg" alt="Sirviendo café" loading="lazy">
-                                </div>
-                                <div class="col-sm-7">
-                                    <h4 class="fontFranklin text-black negrita"><i class="fa fa-table service-icon"></i>Reserva en Linea</h4>
-                                    <p class="m-0 fontLora text-black">Simplifica tu visita programando tu mesa en línea. Con nuestro servicio de reserva en línea, planificar tu encuentro en Coffee DOT es más conveniente que nunca.</p>
-                                </div>
+                            <div class="col-sm-7">
+                                <h2 class="fs-4 fontFranklin text-negro negrita"><i class="fa fa-table service-icon"></i>Reserva en Linea</h2>
+                                <p class="m-0 fontLora text-negro">Simplifica tu visita programando tu mesa en línea. Con nuestro servicio de reserva en línea, planificar tu encuentro en Coffee DOT es más conveniente que nunca.</p>
                             </div>
                         </div>
                     </div>
                 </div>
-            </section>
+            </div>
         </main>
 
         <!-- Pie de pagina -->
@@ -167,8 +172,15 @@
                 </div>
             </div>
         </footer>
+
         <!-- Linkeo de scripts de boostrap -->
-        <script src="../js/bootstrap.bundle.min.js"></script>
+        <script src="./js/bootstrap.bundle.min.js"></script>
+
+        <!-- linkeo el script de AOS-->
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
     </body>
 
 </html>
