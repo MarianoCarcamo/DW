@@ -3,6 +3,7 @@
 @import "utilitarias.scss";
 @import "mixin.scss";
 @import "reset.scss";
+@import "body.scss";
 @import "header.scss";
 @import "carousel.scss";
 @import "botones.scss";
@@ -11,4 +12,4 @@
 @import "precio-menu.scss";
 @import "fondo-cafe.scss";
 @import "icono-servicio.scss";
-@import "animate.css";
+@import "../node_modules/animate.css/animate.css";

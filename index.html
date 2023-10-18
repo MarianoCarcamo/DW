@@ -19,6 +19,9 @@
 
         <!-- Linkeamos css al html-->
         <link rel="stylesheet" href="./css/estilos.css"> 
+
+        <!-- Linkeamos aos-->
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     </head>
 
     <!-- El cuerpo contiene lo que el usuario puede ver. La mayoria del codigo esta aqui -->
@@ -62,7 +65,7 @@
                 <div class="carousel-inner">
                     <div class="carousel-item active">
                         <img src="./assets/img/carousel-1.jpg" class="d-block w-100" alt="Taza de café en carrusel" loading="lazy">
-                        <div class="carousel-focus d-flex flex-column align-items-center justify-content-center">
+                        <div class="carousel-focus d-flex flex-column align-items-center justify-content-center animate__animated animate__fadeIn animate__delay">
                             <h2 class="text-brown fontLora m-0">Sabor, Historia y Pasión</h2>
                             <h2 class="text-brown fontLora m-0">en cada sorbo de</h2>
                             <h1 class="fontFranklin display-1 negrita m-0">CAFÉ</h1>
@@ -71,7 +74,7 @@
                     </div>
                     <div class="carousel-item">
                         <img src="./assets/img/carousel-2.jpg" class="d-block w-100" alt="Taza de café en carrusel" loading="lazy">
-                        <div class="carousel-focus d-flex flex-column align-items-center justify-content-center">
+                        <div class="carousel-focus d-flex flex-column align-items-center justify-content-center animate__animated animate__fadeIn animate__delay">
                             <h2 class="text-brown fontLora m-0">Sabor, Historia y Pasión</h2>
                             <h2 class="text-brown fontLora m-0">en cada sorbo de</h2>
                             <h1 class="fontFranklin display-1 negrita m-0">CAFÉ</h1>
@@ -99,7 +102,7 @@
                         <h2 class="display-4 text-negro">Al Servicio Desde 1998</h2>
                     </div>
                     <div class="row">
-                        <div class="col-lg-4 py-0 py-lg-5">
+                        <div class="col-lg-4 py-0 py-lg-5" data-aos="fade-right" data-aos-offset="500" data-aos-once=»true» data-aos-duration="1000">
                             <h2 class="display-5 mb-3 text-negro negrita fontFranklin">Historia</h2>
                             <h3 class="fs-5 mb-3 fontLora text-negro">Coffee DOT, abrió sus puertas por primera vez el 8 de julio 1998 bajo la dirección de Samuel Jenkins, nuestro apasionado amante del café y hábil tostador.</h3>
                             <p>Desde entonces, ha sido un punto de encuentro querido en la comunidad, sirviendo café recién tostado y creando un ambiente acogedor. A lo largo de las décadas, Coffee DOT ha mantenido su compromiso con la calidad y la autenticidad, convirtiéndose en un símbolo de la ciudad y un legado familiar que perdura hasta hoy.</p>
@@ -110,7 +113,7 @@
                                 <img class="position-absolute w-100 h-100" src="./assets/img/about.png" style="object-fit: cover;" loading="lazy">
                             </div>
                         </div>
-                        <div class="col-lg-4 py-0 py-lg-5">
+                        <div class="col-lg-4 py-0 py-lg-5" data-aos="fade-left" data-aos-offset="500" data-aos-once=»true» data-aos-duration="1000">
                             <h2 class="mb-3 text-negro negrita fontFranklin">Visión</h2>
                             <p class="fs-5">La visión de Coffee DOT es ser el epicentro de la cultura del café, ofreciendo a nuestros clientes la mejor experiencia posible con café de alta calidad ademas de:</p>
                             <p class="fs-4 mb-3"><i class="fa fa-check text-brown me-3"></i>Un ambiente acogedor</p>
@@ -129,7 +132,7 @@
                         <h3 class="text-brown negrita interletraje">SERVICIOS</h3>
                         <h2 class="display-4 text-negro nagrita">Frescos y Orgánicos</h2>
                     </div>
-                    <div class="row">
+                    <div class="row" data-aos="fade" data-aos-offset="500" data-aos-duration="1000" data-aos-once=»true»>
                         <div class="col-lg-6 mb-5">
                             <div class="row align-items-center">
                                 <div class="col-sm-5">
@@ -182,9 +185,11 @@
             <section>
                 <div class="oferta container-fluid my-5 py-5 text-center position-relative overlay-top overlay-bottom">
                     <div class="container py-5">
-                        <h2 class="display-3 text-brown fontFranklin negrita mt-3">50% OFF</h2>
-                        <h3 class="display-5 fontFranklin negrita mb-3">Oferta Especial de Lunes</h3>
-                        <h4 class="fontFranklin mb-4 pb-3">Solo los Lunes del mes de Noviembre</h4>
+                        <div data-aos="zoom-in" data-aos-offset="200" data-aos-once=»true»>
+                            <h2 class="display-3 text-brown fontFranklin negrita mt-3">50% OFF</h2>
+                            <h3 class="display-5 fontFranklin negrita mb-3">Oferta Especial de Lunes</h3>
+                            <h4 class="fontFranklin mb-4 pb-3">Solo los Lunes del mes de Noviembre</h4>
+                        </div>
                         <form class="d-flex justify-content-center">
                             <div class="mx-1">
                                 <label class="visually-hidden" for="inlineFormInputGroupUsername">Username</label>
@@ -208,7 +213,7 @@
                         <h2 class="display-4 text-negro">Precios Competitivos</h2>
                     </div>
                     <div class="row">
-                        <div class="col-lg-6">
+                        <div class="col-lg-6" data-aos="fade-right" data-aos-offset="500" data-aos-once=»true» data-aos-duration="1000">
                             <h2 class="display-6 mb-5 fontFranklin text-negro negrita text-center">Café Caliente</h2>
                             <div class="row align-items-center mb-3">
                                 <div class="col-4 col-sm-3">
@@ -241,7 +246,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-6">
+                        <div class="col-lg-6" data-aos="fade-left" data-aos-offset="500" data-aos-once=»true» data-aos-duration="1000">
                             <h2 class="display-6 mb-5 fontFranklin text-negro negrita text-center">Café Frio</h2>
                             <div class="row align-items-center mb-3">
                                 <div class="col-4 col-sm-3">
@@ -283,7 +288,7 @@
                 <div class="container-fluid my-5">
                     <div class="container">
                         <div class="reservacion position-relative overlay-top overlay-bottom">
-                            <div class="row align-items-center">
+                            <div class="row align-items-center" data-aos="zoom-in" data-aos-offset="500" data-aos-once=»true»>
                                 <div class="col-lg-6 my-5 my-lg-0">
                                     <div class="p-5">
                                         <div class="mb-4">
@@ -336,7 +341,7 @@
                         <h2 class="display-4 text-negro">Nuestros Clientes</h2>
                     </div>
                     <div class="row">
-                        <div class="col-lg-6">
+                        <div class="col-lg-6" data-aos="fade-right" data-aos-offset="500" data-aos-once=»true» data-aos-duration="1000">
                             <div class="row align-items-center mb-3">
                                 <div class="col-4 col-sm-3">
                                     <img class="w-100 mb-3 mb-sm-0" src="./assets/img/testimonial-1.jpg" alt="Café negro">
@@ -358,7 +363,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-6">
+                        <div class="col-lg-6" data-aos="fade-left" data-aos-offset="500" data-aos-once=»true» data-aos-duration="1000">
                             <div class="row align-items-center mb-3">
                                 <div class="col-4 col-sm-3">
                                     <img class="w-100 mb-3 mb-sm-0" src="./assets/img/testimonial-3.jpg" alt="Café negro">
@@ -428,7 +433,15 @@
                 </div>
             </div>
         </footer>
+
         <!-- Linkeo de scripts de boostrap -->
         <script src="./js/bootstrap.bundle.min.js"></script>
+
+        <!-- linkeo el script de AOS-->
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
+
     </body>
 </html>
