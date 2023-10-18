@@ -51,6 +51,14 @@ body {
 .customizedNav {
   background-color: rgb(104, 81, 50);
 }
+@media (min-width: 992px) {
+  .customizedNav {
+    position: absolute;
+    background: none;
+    width: 100%;
+    z-index: 2;
+  }
+}
 .customizedNav .logo {
   width: 49px;
   height: 45px;
@@ -63,17 +71,14 @@ body {
 }
 .customizedNav .nav-link:hover, .customizedNav .nav-link:focus {
   color: rgb(255, 153, 0);
-  transform: scale(1.1);
+  transform: scale(1.1) translateX(20px);
 }
-
 @media (min-width: 992px) {
-  .customizedNav {
-    position: absolute;
-    background: none;
-    width: 100%;
-    z-index: 2;
+  .customizedNav .nav-link:hover, .customizedNav .nav-link:focus {
+    transform: scale(1.1);
   }
 }
+
 .carousel-focus {
   background: linear-gradient(rgba(41, 28, 25, 0.5215686275), rgba(41, 28, 25, 0.5215686275));
   position: absolute;

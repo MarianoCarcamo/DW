@@ -1,5 +1,11 @@
 .customizedNav{
     background-color: rgb(104, 81, 50);
+    @media  (min-width: 992px){
+        position: absolute;
+        background: none;
+        width: 100%;
+        z-index: 2;
+    }
     .logo{
         width: 49px;
         height: 45px;
@@ -11,16 +17,10 @@
         transition: color 0.25s ease-in-out, transform 0.25s ease-in-out;
         &:hover, &:focus{
             color: map-get($color, marron-claro);
-            transform: scale(1.1);
+            transform: scale(1.1) translateX(20px);
+            @media  (min-width: 992px){
+                transform: scale(1.1);
+            }
         }
-    }
-}
-
-@media  (min-width: 992px){
-    .customizedNav{
-        position: absolute;
-        background: none;
-        width: 100%;
-        z-index: 2;
     }
 }
