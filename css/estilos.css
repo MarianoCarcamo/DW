@@ -79,6 +79,18 @@ body {
   }
 }
 
+.bg-404 .customizedNav {
+  background-color: rgb(0, 0, 0);
+}
+@media (min-width: 992px) {
+  .bg-404 .customizedNav {
+    position: absolute;
+    background: none;
+    width: 100%;
+    z-index: 2;
+  }
+}
+
 .carousel-focus {
   background: linear-gradient(rgba(41, 28, 25, 0.5215686275), rgba(41, 28, 25, 0.5215686275));
   position: absolute;
@@ -189,6 +201,24 @@ body {
   border-radius: 45px;
   color: #33211D;
   background: rgb(255, 153, 0);
+}
+
+.bg-404 {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  background: repeat url(../assets/img/error404.jpg);
+  background-position: top center;
+  background-attachment: fixed;
+  background-size: contain;
+}
+
+.focus-404 {
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.7529411765), rgba(0, 0, 0, 0.7529411765), rgba(0, 0, 0, 0.7529411765));
+}
+
+.p-404 {
+  padding-top: 650px;
 }
 
 /*# sourceMappingURL=estilos.css.map */
