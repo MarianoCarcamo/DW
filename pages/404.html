@@ -1,11 +1,115 @@
 <!DOCTYPE html>
-<html lang="es">
+
+<html lang="es"> <!-- Indica al navegador el idioma en la que esta la pagina -->
+
+    <!-- La cabeza o "head" contiene las configuraciones principales -->
     <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Error 404</title>
+        <meta charset="UTF-8"> <!-- Codigo de caracteres empleado -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Config. de la vista en pantalla -->
+
+        <title>Error 404 | Coffee ● DOT</title> <!-- nombre de la pagina -->
+
+        <!-- Linkeamos el favicon-->
+        <link rel="icon" type="image/png" href="../favicon.ico"> 
+
+        <!-- Font Awesome -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+
+        <!-- Linkeamos boostrap-->
+        <link rel="stylesheet" href="../css/bootstrap.min.css"> 
+
+        <!-- Linkeamos css al html-->
+        <link rel="stylesheet" href="../css/estilos.css"> 
+
+        <!-- Linkeamos aos-->
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     </head>
-    <body>
-        <h1> 404 </h1>
+    <body class="bg-404">
+        <header class=" fixed-top">
+            <nav class="navbar navbar-expand-lg px-2 customizedNav">
+                <div class="container-fluid">
+                    <a class="navbar-brand fontLora fs-3" href="../index.html">
+                        <img class="logo" src="../assets/img/logo.png" alt="logo" loading="lazy"> Coffee<span class="negrita text-brown"> ● DOT</span>
+                    </a>
+                    <button class="navbar-toggler" style="--bs-navbar-toggler-border-color: white; --bs-navbar-color: rgba(255, 255, 255, 0.726);" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="fs-5 navbar-nav me-auto mb-2 mb-lg-0 w-100 justify-content-end">
+                            <li class="nav-item">
+                                <a class="nav-link fontLora text-brown" href="../index.html">Inicio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link fontLora" href="../pages/nosotros.html">Nosotros</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link fontLora" href="../pages/servicios.html">Servicios</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link fontLora" href="../pages/menu.html">Menú</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link fontLora" href="../pages/contacto.html">Contacto</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <main class="p-404">
+        </main>
+
+        <footer class="focus-404">
+            <div class="container-fluid mt-5 pt-5 px-0 position-relative">
+                <div class="row mx-0 pt-5 px-sm-3 px-lg-5 mt-4">
+                    <div class="col-lg-3 col-md-6 mb-5 fontFranklin">
+                        <h2 class="fs-3 negrita text-uppercase mb-4" style="letter-spacing: 3px;">Contactanos</h2>
+                        <p><i class="fa fa-map-marker-alt me-2"></i>Calle 123, Tucumán, Argentina</p>
+                        <p><i class="fa fa-phone-alt me-2"></i>+54 381 xxxxxx</p>
+                        <p class="m-0"><i class="fa fa-envelope me-2"></i>info@ejemplo.com</p>
+                    </div>
+                    <div class="col-lg-3 col-md-6 mb-5 fontFranklin">
+                        <h2 class="fs-3 negrita text-uppercase mb-4" style="letter-spacing: 3px;">Nuestras Redes</h2>
+                        <p>Únete a nuestra comunidad en redes</p>
+                        <div class="d-flex gap-1">
+                            <a class="btn btn-borde btn-lg btn-outline-light btn-lg-square" href="https://twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
+                            <a class="btn btn-borde btn-lg btn-outline-light btn-lg-square" href="https://es-la.facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-borde btn-lg btn-outline-light btn-lg-square" href="https://ar.linkedin.com/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                            <a class="btn btn-borde btn-lg btn-outline-light btn-lg-square" href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 mb-5 fontFranklin">
+                        <h2 class="fs-3 negrita text-uppercase mb-4" style="letter-spacing: 3px;">Horarios</h2>
+                        <div>
+                            <p class="fs-5 text-uppercase">Lunes - Viernes</p>
+                            <p>8.00 - 20.00 Hs</p>
+                            <p class="fs-5 text-uppercase">Sabado - Domigo</p>
+                            <p>14.00 - 20.00 Hs</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 mb-5 fontFranklin">
+                        <h2 class="fs-3 negrita text-uppercase mb-4" style="letter-spacing: 3px;">Nuestro Boletín</h2>
+                        <p>Suscribete a nuestro boletín para recibir noticias y ofertas exclusivas de Coffee DOT en tu bandeja de entrada.</p>
+                        <form action="#" class="row">
+                            <input type="email" class="col-7 fontFranklin bg- borde-primario" style="background-color: #33211D;" name="email" id="emailFooter" placeholder="Correo Electrónico" required="required"/>
+                            <input class="col-5 btn btn-borde btn-light-brown fontFranklin negrita" type="submit"></input>
+                        </form>
+                    </div>
+                </div>
+                <div class="container-fluid fontLora border-top mt-4 py-1" style="border-color: rgba(256, 256, 256, .1) !important;">
+                    <p class="mt-3 text-center">Copyright &copy;2023 Mariano C. Todos los derechos reservados.</a></p>
+                </div>
+            </div>
+        </footer>
+
+        <!-- Linkeo de scripts de boostrap -->
+        <script src="../js/bootstrap.bundle.min.js"></script>
+
+        <!-- linkeo el script de AOS-->
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
     </body>
 </html>

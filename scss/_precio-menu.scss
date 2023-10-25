@@ -1,0 +1,12 @@
+.menu-precio {
+    @include flexAlineacionJustificado(center,center);
+    position: relative;
+    margin: 0;
+    bottom: 125px;
+    left: 90px;
+    width: 45px;
+    height: 45px;
+    border-radius: 45px;
+    color: map-get($color, negro);
+    background: map-get($color, marron-claro);
+}

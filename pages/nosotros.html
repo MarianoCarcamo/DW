@@ -6,7 +6,12 @@
     <head>
         <meta charset="UTF-8"> <!-- Codigo de caracteres empleado -->
         <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Config. de la vista en pantalla -->
-        <title>Coffee ● DOT | Sabor, historia y pasión</title> <!-- nombre de la pagina -->
+
+        <meta name="description" content="Descubre la historia, pasión y compromiso que hacen de Coffee DOT una cafetería única. Conoce a nuestros fundadores y nuestra visión de crear experiencias de café inigualables.">
+
+        <meta name="keywords" content="Historia, Fundadores, Pasión por el café, Filosofía, Compromiso, Comunidad, Tradición, Excelencia, Innovación, Equipo, Valores, Cultura, Visión, Misión, Herencia, Compromiso social, Experiencia, Compromiso con la calidad, Testimonios, Equipo de baristas, Café de calidad, Cafetería acogedora, Espresso excepcional, Café tostado fresco, Eventos culturales, Comunidad cafetera, Café caliente y frío, Menú de café, Entrega a domicilio, Reservas en línea, Coffee DOT, Café gourmet, Ambiente relajante, Café y pasteles, Boletín de noticias, Ofertas especiales, Experiencia de café, Arte y café, Café, Calidad, Comunidad, Ambiente">
+
+        <title>Nosotros | Coffee ● DOT</title> <!-- nombre de la pagina -->
 
         <!-- Linkeamos el favicon-->
         <link rel="icon" type="image/png" href="../favicon.ico"> 
@@ -19,6 +24,9 @@
 
         <!-- Linkeamos css al html-->
         <link rel="stylesheet" href="../css/estilos.css"> 
+
+        <!-- Linkeamos aos-->
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     </head>
 
     <!-- El cuerpo contiene lo que el usuario puede ver. La mayoria del codigo esta aqui -->
@@ -27,19 +35,19 @@
         <header>
             <nav class="navbar navbar-expand-lg px-2 customizedNav">
                 <div class="container-fluid">
-                    <a class="navbar-brand fontLora" href="../index.html">
-                        <img class="logo" src="../assets/img/logo.png" alt="logo" loading="lazy"> Coffee ● <span class="negrita">DOT</span>
+                    <a class="navbar-brand fontLora fs-3" href="../index.html">
+                        <img class="logo" src="../assets/img/logo.png" alt="logo" loading="lazy"> Coffee<span class="negrita text-brown"> ● DOT</span>
                     </a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav me-auto mb-2 mb-lg-0 w-100 justify-content-end">
+                        <ul class="fs-5 navbar-nav me-auto mb-2 mb-lg-0 w-100 justify-content-end">
                             <li class="nav-item">
                                 <a class="nav-link fontLora" href="../index.html">Inicio</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link fontLora text-brown" href="#">Nosotros</a>
+                                <a class="nav-link fontLora text-brown" href="../pages/nosotros.html">Nosotros</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link fontLora" href="../pages/servicios.html">Servicios</a>
@@ -60,41 +68,40 @@
         <section>
             <div class="container-fluid cabecera mb-5 position-relative overlay-bottom">
                 <div class="d-flex flex-column align-items-center justify-content-center pt-0 pt-lg-5" style="min-height: 400px">
-                    <h1 class="display-3 mb-3 mt-0 mt-lg-5 text-uppercase fontLora">Sobre Nosotros</h1>
+                    <h1 class="display-3 mb-3 mt-0 mt-lg-5 text-uppercase fontLora text-brown">Sobre Nosotros</h1>
                 </div>
             </div>
         </section>
 
         <!-- Contenido principal -->
-        <main>
-            <section class="container-fluid py-5">
-                <div class="container">
-                    <div class="section-titulo fontLora">
-                        <h4 class="display-6 text-brown negrita interLetter-5 text-uppercase">Al Servicio Desde 1998</h4>
+        <main class="container-fluid py-5">
+            <div class="container">
+                <div class="section-titulo fontLora">
+                    <h3 class="text-brown negrita interletraje">SOBRE NOSOTROS</h3>
+                    <h2 class="display-4 text-negro">Al Servicio Desde 1998</h2>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4 py-0 py-lg-5" data-aos="fade-right" data-aos-offset="500" data-aos-once=»true» data-aos-duration="1000">
+                        <h2 class="display-5 mb-3 text-negro negrita fontFranklin">Historia</h2>
+                        <h3 class="fs-5 mb-3 fontLora text-negro">Coffee DOT, abrió sus puertas por primera vez el 8 de julio 1998 bajo la dirección de Samuel Jenkins, nuestro apasionado amante del café y hábil tostador.</h3>
+                        <p>Desde entonces, ha sido un punto de encuentro querido en la comunidad, sirviendo café recién tostado y creando un ambiente acogedor. A lo largo de las décadas, Coffee DOT ha mantenido su compromiso con la calidad y la autenticidad, convirtiéndose en un símbolo de la ciudad y un legado familiar que perdura hasta hoy.</p>
+                        <a href="../pages/nosotros.html" class="btn btn-borde btn-brown fontFranklin py-2 px-4 mt-2">Más</a>
                     </div>
-                    <div class="row">
-                        <div class="col-lg-4 py-0 py-lg-5">
-                            <h1 class="mb-3 text-black negrita fontFranklin">Historia</h1>
-                            <h5 class="mb-3 fontLora text-black">Coffee DOT, abrió sus puertas por primera vez el 8 de julio 1998 bajo la dirección de Samuel Jenkins, nuestro apasionado amante del café y hábil tostador.</h5>
-                            <p>Desde entonces, ha sido un punto de encuentro querido en la comunidad, sirviendo café recién tostado y creando un ambiente acogedor. A lo largo de las décadas, Coffee DOT ha mantenido su compromiso con la calidad y la autenticidad, convirtiéndose en un símbolo de la ciudad y un legado familiar que perdura hasta hoy.</p>
-                            <a href="./pages/nosotros.html" class="btn btn-borde btn-brown fontFranklin py-2 px-4 mt-2">Más</a>
+                    <div class="col-lg-4 py-5 py-lg-0" style="min-height: 500px;">
+                        <div class="position-relative h-100">
+                            <img class="position-absolute w-100 h-100" src="../assets/img/about.png" style="object-fit: cover;" loading="lazy">
                         </div>
-                        <div class="col-lg-4 py-5 py-lg-0" style="min-height: 500px;">
-                            <div class="position-relative h-100">
-                                <img class="position-absolute w-100 h-100" src="../assets/img/about.png" style="object-fit: cover;" loading="lazy">
-                            </div>
-                        </div>
-                        <div class="col-lg-4 py-0 py-lg-5">
-                            <h1 class="mb-3 text-black negrita fontFranklin">Visión</h1>
-                            <p>La visión de Coffee DOT es ser el epicentro de la cultura del café, ofreciendo a nuestros clientes la mejor experiencia posible con café de alta calidad ademas de:</p>
-                            <h5 class="mb-3"><i class="fa fa-check text-brown me-3"></i>Un ambiente acogedor</h5>
-                            <h5 class="mb-3"><i class="fa fa-check text-brown me-3"></i>Rescuerdos inolvidables</h5>
-                            <h5 class="mb-3"><i class="fa fa-check text-brown me-3"></i>Compromiso con la comunidad</h5>
-                            <a href="./pages/nosotros.html" class="btn btn-light-brown btn-borde fontFranklin py-2 px-4 mt-2">Más</a>
-                        </div>
+                    </div>
+                    <div class="col-lg-4 py-0 py-lg-5" data-aos="fade-left" data-aos-offset="500" data-aos-once=»true» data-aos-duration="1000">
+                        <h2 class="mb-3 text-negro negrita fontFranklin">Visión</h2>
+                        <p class="fs-5">La visión de Coffee DOT es ser el epicentro de la cultura del café, ofreciendo a nuestros clientes la mejor experiencia posible con café de alta calidad ademas de:</p>
+                        <p class="fs-4 mb-3"><i class="fa fa-check text-brown me-3"></i>Un ambiente acogedor</p>
+                        <p class="fs-4 mb-3"><i class="fa fa-check text-brown me-3"></i>Recuerdos inolvidables</p>
+                        <p class="fs-4 mb-3"><i class="fa fa-check text-brown me-3"></i>Compromiso con la comunidad</p>
+                        <a href="../pages/nosotros.html" class="btn btn-light-brown btn-borde fontFranklin py-2 px-4 mt-2">Más</a>
                     </div>
                 </div>
-            </section>
+            </div>
         </main>
 
         <!-- Pie de pagina -->
@@ -102,39 +109,37 @@
             <div class="container-fluid mt-5 pt-5 px-0 position-relative overlay-top">
                 <div class="row mx-0 pt-5 px-sm-3 px-lg-5 mt-4">
                     <div class="col-lg-3 col-md-6 mb-5 fontFranklin">
-                        <h4 class="negrita text-uppercase mb-4" style="letter-spacing: 3px;">Contactanos</h4>
+                        <h2 class="fs-3 negrita text-uppercase mb-4" style="letter-spacing: 3px;">Contactanos</h2>
                         <p><i class="fa fa-map-marker-alt me-2"></i>Calle 123, Tucumán, Argentina</p>
                         <p><i class="fa fa-phone-alt me-2"></i>+54 381 xxxxxx</p>
                         <p class="m-0"><i class="fa fa-envelope me-2"></i>info@ejemplo.com</p>
                     </div>
                     <div class="col-lg-3 col-md-6 mb-5 fontFranklin">
-                        <h4 class="negrita text-uppercase mb-4" style="letter-spacing: 3px;">Nuestras Redes</h4>
+                        <h2 class="fs-3 negrita text-uppercase mb-4" style="letter-spacing: 3px;">Nuestras Redes</h2>
                         <p>Únete a nuestra comunidad en redes</p>
-                        <div class="d-flex justify-content-center gap-1">
+                        <div class="d-flex gap-1">
                             <a class="btn btn-borde btn-lg btn-outline-light btn-lg-square" href="https://twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
                             <a class="btn btn-borde btn-lg btn-outline-light btn-lg-square" href="https://es-la.facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a>
                             <a class="btn btn-borde btn-lg btn-outline-light btn-lg-square" href="https://ar.linkedin.com/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
                             <a class="btn btn-borde btn-lg btn-outline-light btn-lg-square" href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-md-6 mb-5 fontFranklin text-center">
-                        <h4 class="negrita text-uppercase mb-4" style="letter-spacing: 3px;">Horarios</h4>
+                    <div class="col-lg-3 col-md-6 mb-5 fontFranklin">
+                        <h2 class="fs-3 negrita text-uppercase mb-4" style="letter-spacing: 3px;">Horarios</h2>
                         <div>
-                            <h6 class="text-uppercase">Lunes - Viernes</h6>
+                            <p class="fs-5 text-uppercase">Lunes - Viernes</p>
                             <p>8.00 - 20.00 Hs</p>
-                            <h6 class="text-uppercase">Sabado - Domigo</h6>
+                            <p class="fs-5 text-uppercase">Sabado - Domigo</p>
                             <p>14.00 - 20.00 Hs</p>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6 mb-5 fontFranklin">
-                        <h4 class="negrita text-uppercase mb-4" style="letter-spacing: 3px;">Nuestro Boletín</h4>
+                        <h2 class="fs-3 negrita text-uppercase mb-4" style="letter-spacing: 3px;">Nuestro Boletín</h2>
                         <p>Suscribete a nuestro boletín para recibir noticias y ofertas exclusivas de Coffee DOT en tu bandeja de entrada.</p>
-                        <div>
-                            <form class="row">
-                                <input type="email" class="col-7 fontFranklin bg- border-primary" style="background-color: #33211D;" name="email" id="emailFooter" placeholder="Correo Electrónico" required="required"/>
-                                <button class="col-5 btn btn-borde btn-light-brown fontFranklin negrita" type="submit">Suscribir</button>
-                            </form>
-                        </div>
+                        <form action="./404.html" class="row">
+                            <input type="email" class="col-7 fontFranklin bg- borde-primario" style="background-color: #33211D;" name="email" id="emailFooter" placeholder="Correo Electrónico" required="required"/>
+                            <input class="col-5 btn btn-borde btn-light-brown fontFranklin negrita" type="submit"></input>
+                        </form>
                     </div>
                 </div>
                 <div class="container-fluid fontLora border-top mt-4 py-1" style="border-color: rgba(256, 256, 256, .1) !important;">
@@ -142,8 +147,15 @@
                 </div>
             </div>
         </footer>
+
         <!-- Linkeo de scripts de boostrap -->
         <script src="../js/bootstrap.bundle.min.js"></script>
+
+        <!-- linkeo el script de AOS-->
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
     </body>
 
 </html>

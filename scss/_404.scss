@@ -1,0 +1,17 @@
+.bg-404 {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    background:repeat  url(../assets/img/error404.jpg);
+    background-position: top center;
+    background-attachment: fixed;
+    background-size: contain;
+}
+
+.focus-404{
+    background: linear-gradient(#00000000, #000000c0, #000000c0,  #000000c0);
+}
+
+.p-404{
+    padding-top: 650px;
+}
